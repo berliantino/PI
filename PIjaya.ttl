@@ -530,79 +530,32 @@ ITS-prop:jumlahDosen  a qb:MeasureProperty;
 ITS-stats:dsd-ITS01 a qb:DataStructureDefinition;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS-dimensi:fakultas;],
-        [ qb:dimension ITS-dimensi:jurusan; ],
-        [ qb:dimension ITS-dimensi:tahunAjaran;],
-		[ qb:dimension ITS-dimensi:jenjangPendidikan;];
+        [ qb:dimension ITS-dimensi:fakultas],
+        [ qb:dimension ITS-dimensi:jurusan ],
+        [ qb:dimension ITS-dimensi:tahunAjaran],
+		[ qb:dimension ITS-dimensi:jenjangPendidikan];
         
     # The measure(s)
     qb:component 
-				[ qb:measure ITS-prop:jumlahMahasiswa; ],
-				[ qb:measure ITS-prop:jumlahMahasiswaDO; ],
-				[ qb:measure ITS-prop:jumlahMahasiswaLulus; ];
+				[ qb:measure ITS-prop:jumlahMahasiswa ],
+				[ qb:measure ITS-prop:jumlahMahasiswaDO ],
+				[ qb:measure ITS-prop:jumlahMahasiswaLulus ];
     
-	 # The attributes
-    qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
-                   qb:componentRequired "true"^^xsd:boolean;
-                   qb:componentAttachment qb:DataSet; ] ;
-    
-    # slices
-     qb:component [qb:sliceKey ITS-prop:sliceByFakultas; ], 
-				  [qb:sliceKey ITS-prop:sliceByJurusan; ],		
-				  [qb:sliceKey ITS-prop:sliceByTahunAjaran; ],
-				  [qb:sliceKey ITS-prop:sliceByJenjangPendidikan; ];
-    .
-    
-ITS-prop:sliceByFakultas a qb:SliceKey;
-    rdfs:label "slice by fakultas"@en;
-    qb:componentProperty ITS:Fakultas, ITS-dimensi:fakultas ;
-    .
-
-ITS-prop:sliceByJurusan a qb:SliceKey;
-    rdfs:label "slice by jurusan"@en;
-    qb:componentProperty ITS:Jurusan, ITS-dimensi:jurusan ;
-    .
-
-ITS-prop:sliceByTahunAjaran a qb:SliceKey;
-    rdfs:label "slice by tahun ajaran"@en;
-    qb:componentProperty ITS:tahunAjaran, ITS-dimensi:tahunAjaran ;
-    .
-
-ITS-prop:sliceByJenjangPendidikan a qb:SliceKey;
-    rdfs:label "slice by jenjang pendidikan S1,S2,S3"@en;
-    qb:componentProperty ITS:jenjangPendidikan, ITS-dimensi:jenjangPendidikan ;
-    .
+	.
 	
 # ------------------------------------------------------------------
-ITS-stats:dsd-ITS02 a qb:DataStructureDefinition;
+
+ITS-stats:dsd-ITS02 a qb:DataStructureDefinition ;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS-dimensi:fakultas;],
-        [ qb:dimension ITS-dimensi:jurusan;];
+        [ qb:dimension ITS-dimensi:fakultas],
+        [ qb:dimension ITS-dimensi:jurusan];
 		
         
     # The measure(s)
-		  qb:measure ITS-prop:jumlahDosen;
-     # The attributes
-    qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
-                   qb:componentRequired "true"^^xsd:boolean;
-                   qb:componentAttachment qb:DataSet; ] ;
-    
-    # slices
-     qb:component [qb:sliceKey ITS-prop:sliceByFakultas;], 
-				  [qb:sliceKey ITS-prop:sliceByJurusan;] ;
-    .
-    
-ITS-prop:sliceByFakultas a qb:SliceKey;
-    rdfs:label "slice by fakultas"@en;
-    qb:componentProperty ITS:Fakultas, ITS-dimensi:fakultas ;
-    .
-
-ITS-prop:sliceByJurusan a qb:SliceKey;
-    rdfs:label "slice by jurusan"@en;
-    qb:componentProperty ITS:Jurusan, ITS-dimensi:jurusan ;
-    .
-
+		qb:component  [qb:measure ITS-prop:jumlahDosen];
+		  
+   .
    
 # ---------------------------DATA SET-------------------------
 	
@@ -614,9 +567,10 @@ ITS:dataset-ITS01 a qb:DataSet;
     dct:issued      "2015-12-08"^^xsd:date;
     dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
 	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
-qb:structure ITS-stats:DataStructureDefinition-ITS01 ;  
+qb:structure ITS-stats:dsd-ITS01 ;  
    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
- 
+   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+   
 	.
 #-----------------------------------
 ITS:dataset-ITS02 a qb:DataSet;
@@ -627,9 +581,10 @@ ITS:dataset-ITS02 a qb:DataSet;
     dct:issued      "2015-12-08"^^xsd:date;
     dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
 	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
-qb:structure ITS-stats:DataStructureDefinition-ITS02 ;  
+qb:structure ITS-stats:dsd-ITS02 ;  
    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
-
+  # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+   
 	.
 	
 # -------------------------OBSERVATIONS--------------------
@@ -973,25 +928,3 @@ ITS-stats:dosen_010 a qb:Observation;
     ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
 	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_kimia ;         
 	ITS-prop:jumlahDosen	    37 .
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
