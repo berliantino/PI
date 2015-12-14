@@ -19,13 +19,13 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ITS: <http://pastebin.com/raw.php?i=6uxBZENq#> .
-@prefix ITS-prop: <http://pastebin.com/raw.php?i=6uxBZENq#> .
-@prefix ITS-konsep:	<http://pastebin.com/raw.php?i=6uxBZENq#> .
-@prefix ITS-fakultas:<http://pastebin.com/raw.php?i=6uxBZENq#> .
-@prefix ITS-jurusan:<http://pastebin.com/raw.php?i=6uxBZENq#> .
-@prefix ITS-dimensi:<http://pastebin.com/raw.php?i=6uxBZENq#> .
-@prefix ITS-stats:<http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS: <https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
+@prefix ITS-prop: <https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
+@prefix ITS-konsep:	<https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
+@prefix ITS-fakultas:<https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
+@prefix ITS-jurusan:<https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
+@prefix ITS-dimensi:<https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
+@prefix ITS-stats:<https://raw.githubusercontent.com/berliantino/PI/master/PIjaya.ttl> .
 
 
 # konsep---------------------------------
