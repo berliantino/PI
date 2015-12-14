@@ -561,7 +561,7 @@ ITS:dataset-ITS01 a qb:DataSet;
     dct:issued      "2015-12-08"^^xsd:date;
     dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
 	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
-qb:structure ITS:dsd-ITS01 ;  
+qb:DataStructureDefinition ITS:dsd-ITS01 ;  
    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
  
 	.
@@ -574,7 +574,7 @@ ITS:dataset-ITS02 a qb:DataSet;
     dct:issued      "2015-12-08"^^xsd:date;
     dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
 	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
-qb:structure ITS:dsd-ITS02 ;  
+qb:DataStructureDefinition ITS:dsd-ITS02 ;  
    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
 
 	.
