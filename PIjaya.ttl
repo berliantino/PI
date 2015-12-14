@@ -1,0 +1,997 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+
+
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+
+@prefix ITS: <http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS-prop: <http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS-konsep:	<http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS-fakultas:<http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS-jurusan:<http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS-dimensi:<http://pastebin.com/raw.php?i=6uxBZENq#> .
+@prefix ITS-stats:<http://pastebin.com/raw.php?i=6uxBZENq#> .
+
+
+# konsep---------------------------------
+
+
+# konsep fakultas ---------------------------
+ITS:fakultas a rdfs:Class .
+
+ITS-fakultas:fakultas_FTI
+	a skos:Concept , ITS:fakultas;
+	rdfs:label "Fakultas FTI" ;
+	skos:inScheme ITS-konsep:fakultas .
+
+ITS-fakultas:fakultas_FTSP
+	a skos:Concept, ITS:fakultas ;
+	rdfs:label "Fakultas FTSP" ;
+	skos:inScheme ITS-konsep:fakultas .
+	
+ITS-fakultas:fakultas_FTK
+	a skos:Concept, ITS:fakultas ;
+	rdfs:label "Fakultas FTK" ;
+	skos:inScheme ITS-konsep:fakultas .
+
+ITS-fakultas:fakultas_FMIPA
+	a skos:Concept, ITS:fakultas ;
+	rdfs:label "Fakultas FMIPA" ;
+	skos:inScheme ITS-konsep:fakultas .
+
+ITS-fakultas:fakultas_FTIf
+	a skos:Concept, ITS:fakultas ;
+	rdfs:label "Fakultas FTIf" ;
+	skos:inScheme ITS-konsep:fakultas .
+
+ITS-konsep:fakultas a skos:ConceptScheme ;
+	rdfs:label "Fakultas yang ada di ITS" ;
+	skos:hasTopConcept ITS-konsep:fakultas_FTI, ITS-konsep:fakultas_FTSP, ITS-konsep:fakultas_FTK, ITS-konsep:fakultas_FMIPA, ITS-konsep:fakultas_FTIf ;
+	skos:notation "fakultas" .
+	
+ITS-dimensi:fakultas
+	qb:codeList ITS-konsep:fakultas ;
+	a rdfs:Property, qb:DimensionProperty ;
+	rdfs:range skos:Concept .
+
+# konsep jurusan--------------------------
+
+ITS:jurusan a rdfs:Class .
+
+ITS-jurusan:jurusan_fisika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_matematika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_statistika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_kimia 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_biologi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_mesin 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_elektro 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_fisika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_kimia 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_industri 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_mesin 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_mesin_PLN 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_mesin_KS_Disnaker 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_komputer_kontrol 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_elektro_PLN 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_elektro_KS_disnaker 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_kimia 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_instrumentasi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_D3_t_metrologi_instrumentasi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_multimedia_jaringan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_bisnis 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_material 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manjemen_jaringan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_sipil 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_arsitektur 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_lingkungan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_desain_produk 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_geomatika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_perencanaan_wilayah_kota 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_geofisika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_desain_interior 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_perkapalan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_sistem_perkapalan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_sistem_perkapalan_dg
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_kelautan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_transportasi_laut 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_informatika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_sistem_informasi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_kimia_hayati 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_kimia_non_hayati 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_kimia_pengajaran 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_rek_perancangan_dan_manufaktur 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_energi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_kesehatan_dan_keselamatan_kerja 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_rekayasa_energi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_desain_mekanikal 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_sistem_tenaga 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_sistem_pengaturan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_telekomunikasi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_distribusi_tenagalist 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_telematika 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_kimia_t_proses 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_manajemen_industri 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_rantai_pasok 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_ergonomi_dan_keselamatan_industri 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_kinerja_strategis 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_geoteknik 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_struktur 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_konstruksi 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_penginderaan_jauh 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_sumber_air 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_rekayasa 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_asset 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_pemukiman_kota_dan_lingkungan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_perancangan_dan_kritik_arsitek 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_perancangan_kota 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_arsitek_lingkungan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_manajemen_perencanaan_kota 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_studi_pembangunan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_perancangan_arsitektur 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_real_estate 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_manajemen_lingkungan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_rekayasa_pengendalian_lingkungan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_geotermal 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_perancangan_bang_laut 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_trans_kelautan 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_produk_dan_material_laut 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_sistem_pengend_laut 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_t_manajemen_pantai 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+ITS-jurusan:jurusan_MMT 
+	a skos:Concept , ITS:jurusan  ; 
+	skos:inScheme ITS-konsep:jurusan . 
+	 
+
+ITS-konsep:jurusan a skos:ConceptScheme ;
+	rdfs:label "Jurusan yang ada di ITS" ;
+	skos:hasTopConcept ITS-jurusan:jurusan_fisika, ITS-jurusan:jurusan_matematika, ITS-jurusan:jurusan_statistika, ITS-jurusan:jurusan_kimia, ITS-jurusan:jurusan_biologi, ITS-jurusan:jurusan_t_mesin, ITS-jurusan:jurusan_t_elektro, ITS-jurusan:jurusan_t_fisika, ITS-jurusan:jurusan_t_kimia, ITS-jurusan:jurusan_t_industri, ITS-jurusan:jurusan_D3_t_mesin, ITS-jurusan:jurusan_D3_t_mesin_PLN, ITS-jurusan:jurusan_D3_t_mesin_KS_Disnaker, ITS-jurusan:jurusan_D3_t_komputer_kontrol, ITS-jurusan:jurusan_D3_t_elektro_PLN, ITS-jurusan:jurusan_D3_t_elektro_KS_disnaker, ITS-jurusan:jurusan_D3_t_kimia, ITS-jurusan:jurusan_D3_t_instrumentasi, ITS-jurusan:jurusan_D3_t_metrologi_instrumentasi, ITS-jurusan:jurusan_t_multimedia_jaringan, ITS-jurusan:jurusan_manajemen_bisnis, ITS-jurusan:jurusan_t_material, ITS-jurusan:jurusan_manjemen_jaringan, ITS-jurusan:jurusan_t_sipil, ITS-jurusan:jurusan_arsitektur, ITS-jurusan:jurusan_t_lingkungan, ITS-jurusan:jurusan_desain_produk, ITS-jurusan:jurusan_t_geomatika, ITS-jurusan:jurusan_perencanaan_wilayah_kota, ITS-jurusan:jurusan_t_geofisika, ITS-jurusan:jurusan_desain_interior, ITS-jurusan:jurusan_t_perkapalan, ITS-jurusan:jurusan_t_sistem_perkapalan, ITS-jurusan:jurusan_t_sistem_perkapalan_dg, ITS-jurusan:jurusan_t_kelautan, ITS-jurusan:jurusan_transportasi_laut, ITS-jurusan:jurusan_t_informatika, ITS-jurusan:jurusan_t_sistem_informasi, ITS-jurusan:jurusan_kimia_hayati, ITS-jurusan:jurusan_kimia_non_hayati, ITS-jurusan:jurusan_kimia_pengajaran, ITS-jurusan:jurusan_t_rek_perancangan_dan_manufaktur, ITS-jurusan:jurusan_t_energi, ITS-jurusan:jurusan_t_kesehatan_dan_keselamatan_kerja, ITS-jurusan:jurusan_rekayasa_energi, ITS-jurusan:jurusan_desain_mekanikal, ITS-jurusan:jurusan_t_sistem_tenaga, ITS-jurusan:jurusan_t_sistem_pengaturan, ITS-jurusan:jurusan_t_telekomunikasi, ITS-jurusan:jurusan_manajemen_distribusi_tenagalist, ITS-jurusan:jurusan_t_telematika, ITS-jurusan:jurusan_t_kimia_t_proses, ITS-jurusan:jurusan_t_manajemen_industri, ITS-jurusan:jurusan_t_rantai_pasok, ITS-jurusan:jurusan_ergonomi_dan_keselamatan_industri, ITS-jurusan:jurusan_manajemen_kinerja_strategis, ITS-jurusan:jurusan_geoteknik, ITS-jurusan:jurusan_t_struktur, ITS-jurusan:jurusan_manajemen_konstruksi, ITS-jurusan:jurusan_penginderaan_jauh, ITS-jurusan:jurusan_manajemen_sumber_air, ITS-jurusan:jurusan_manajemen_rekayasa, ITS-jurusan:jurusan_manajemen_asset, ITS-jurusan:jurusan_pemukiman_kota_dan_lingkungan, ITS-jurusan:jurusan_perancangan_dan_kritik_arsitek, ITS-jurusan:jurusan_perancangan_kota, ITS-jurusan:jurusan_arsitek_lingkungan, ITS-jurusan:jurusan_manajemen_perencanaan_kota, ITS-jurusan:jurusan_studi_pembangunan, ITS-jurusan:jurusan_perancangan_arsitektur, ITS-jurusan:jurusan_real_estate, ITS-jurusan:jurusan_t_manajemen_lingkungan, ITS-jurusan:jurusan_t_rekayasa_pengendalian_lingkungan, ITS-jurusan:jurusan_t_geotermal, ITS-jurusan:jurusan_t_perancangan_bang_laut, ITS-jurusan:jurusan_t_trans_kelautan, ITS-jurusan:jurusan_produk_dan_material_laut, ITS-jurusan:jurusan_sistem_pengend_laut, ITS-jurusan:jurusan_t_manajemen_pantai, ITS-jurusan:jurusan_MMT ;
+	skos:notation "jurusan" .
+	
+ITS-dimensi:jurusan
+	qb:codeList ITS-konsep:jurusan ;
+	a rdfs:Property, qb:DimensionProperty ;
+	rdfs:range skos:Concept .
+
+# konsep tahun Ajaran ---------------------------
+ITS:tahunAjaran a rdfs:Class .
+
+ITS-konsep:tahunAjaran_2010_2011
+	a skos:Concept , ITS:tahunAjaran;
+	rdfs:label "Tahun Ajaran 2010/2011" ;
+	skos:inScheme ITS-konsep:tahunAjaran .
+
+ITS-konsep:tahunAjaran_2011_2012
+	a skos:Concept, ITS:tahunAjaran ;
+	rdfs:label "Tahun Ajaran 2011/2012" ;
+	skos:inScheme ITS-konsep:tahunAjaran .
+	
+ITS-konsep:tahunAjaran_2012_2013
+	a skos:Concept, ITS:tahunAjaran ;
+	rdfs:label "Tahun Ajaran 2012/2013" ;
+	skos:inScheme ITS-konsep:tahunAjaran .
+
+ITS-konsep:tahunAjaran_2013_2014
+	a skos:Concept, ITS:tahunAjaran ;
+	rdfs:label "Tahun Ajaran 2013/2014" ;
+	skos:inScheme ITS-konsep:tahunAjaran .
+
+ITS-konsep:tahunAjaran_2014_2015
+	a skos:Concept, ITS:tahunAjaran ;
+	rdfs:label "Tahun Ajaran 2014/2015" ;
+	skos:inScheme ITS-konsep:tahunAjaran .
+
+ITS-konsep:tahunAjaran a skos:ConceptScheme ;
+	rdfs:label "Tahun Ajaran yang ada di ITS" ;
+	skos:hasTopConcept ITS-konsep:2010_2011, ITS-konsep:2011_2012, ITS-konsep:2012_2013, ITS-konsep:2013_2014, ITS-konsep:2014_2015 ;
+	skos:notation "tahunAjaran" .
+	
+ITS-dimensi:tahunAjaran
+	qb:codeList ITS-konsep:tahunAjaran ;
+	a rdfs:Property, qb:DimensionProperty ;
+	rdfs:range skos:Concept .
+
+# konsep jenjang pendidikan ---------------------------
+ITS:jenjangPendidikan a rdfs:Class .
+
+ITS-konsep:jenjangPendidikan_S1
+	a skos:Concept , ITS:jenjangPendidikan;
+	rdfs:label "Jenjang pendidikan S1" ;
+	skos:inScheme ITS-konsep:jenjangPendidikan .
+
+ITS-konsep:jenjangPendidikan_S2
+	a skos:Concept, ITS:jenjangPendidikan ;
+	rdfs:label "Jenjang pendidikan S2" ;
+	skos:inScheme ITS-konsep:jenjangPendidikan .
+	
+ITS-konsep:jenjangPendidikan_S3
+	a skos:Concept, ITS:jenjangPendidikan ;
+	rdfs:label "Jenjang pendidikan S3" ;
+	skos:inScheme ITS-konsep:jenjangPendidikan .
+
+ITS-konsep:jenjangPendidikan a skos:ConceptScheme ;
+	rdfs:label "Fakultas yang ada di ITS" ;
+	skos:hasTopConcept ITS-konsep:jenjangPendidikan_S1, ITS-konsep:jenjangPendidikan_S2, ITS-konsep:jenjangPendidikan_S3 ;
+	skos:notation "jenjangPendidikan" .
+	
+ITS-dimensi:jenjangPendidikan
+	qb:codeList ITS-konsep:jenjangPendidikan ;
+	a rdfs:Property, qb:DimensionProperty ;
+	rdfs:range skos:Concept .	
+	
+	
+	
+# -----------------------------DIMENSION-----------------------------------
+
+ITS-dimensi:fakultas  
+	qb:codeList ITS-konsep:fakultas ;
+	a rdfs:Property, qb:DimensionProperty;
+    rdfs:label "nama fakultas"@en;
+	rdfs:range skos:Concept .
+
+ITS-dimensi:jurusan  
+	qb:codeList ITS-jurusan:jurusan ;
+	a rdfs:Property, qb:DimensionProperty;
+    rdfs:label "nama jurusan"@en;
+	rdfs:range skos:Concept .
+	
+ITS-dimensi:tahunAjaran  
+	qb:codeList ITS-konsep:tahunAjaran ;
+	a rdfs:Property, qb:DimensionProperty;
+    rdfs:label "tahun ajaran"@en;
+	rdfs:range skos:Concept .
+	
+ITS-dimensi:jenjangPendidikan  
+	qb:codeList ITS-konsep:jenjangPendidikan ;
+	a rdfs:Property, qb:DimensionProperty;
+    rdfs:label "jenjang pendidikan (S1/S2/S3)"@en;
+	rdfs:range skos:Concept .
+	
+
+	
+# ----------------------------MEASURE-------------------------------------	
+ITS-prop:jumlahMahasiswa  a rdfs:Property, qb:MeasureProperty;
+    rdfs:label "Jumlah mahasiswa"@en;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+	.
+
+ITS-prop:jumlahMahasiswaDO a rdfs:Property, qb:MeasureProperty;
+    rdfs:label "Jumlah mahasiswa yang DO"@en;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+	.
+
+ITS-prop:jumlahMahasiswaLulus  a qb:MeasureProperty;
+    rdfs:label "Jumlah mahasiswa yang lulus"@en;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+	.	
+	
+ITS-prop:jumlahDosen  a qb:MeasureProperty;
+    rdfs:label "Jumlah Dosen"@en;
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+	.
+	
+# ------------------------DATA STRUCTURE DEFINITION--------------------
+
+ITS-stats:DataStructureDefinition-ITS01 a qb:DataStructureDefinition;
+    qb:component 
+    # The dimensions
+        [ qb:dimension ITS-dimensi:fakultas;],
+        [ qb:dimension ITS-dimensi:jurusan; ],
+        [ qb:dimension ITS-dimensi:tahunAjaran;],
+		[ qb:dimension ITS-dimensi:jenjangPendidikan;];
+        
+    # The measure(s)
+    qb:component 
+				[ qb:measure ITS-prop:jumlahMahasiswa; ],
+				[ qb:measure ITS-prop:jumlahMahasiswaDO; ],
+				[ qb:measure ITS-prop:jumlahMahasiswaLulus; ];
+    
+	 # The attributes
+    qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
+                   qb:componentRequired "true"^^xsd:boolean;
+                   qb:componentAttachment qb:DataSet; ] ;
+    
+    # slices
+     qb:component [qb:sliceKey ITS-prop:sliceByFakultas; ], 
+				  [qb:sliceKey ITS-prop:sliceByJurusan; ],		
+				  [qb:sliceKey ITS-prop:sliceByTahunAjaran; ],
+				  [qb:sliceKey ITS-prop:sliceByJenjangPendidikan; ];
+    .
+    
+ITS-prop:sliceByFakultas a qb:SliceKey;
+    rdfs:label "slice by fakultas"@en;
+    qb:componentProperty ITS:Fakultas, ITS-dimensi:fakultas ;
+    .
+
+ITS-prop:sliceByJurusan a qb:SliceKey;
+    rdfs:label "slice by jurusan"@en;
+    qb:componentProperty ITS:Jurusan, ITS-dimensi:jurusan ;
+    .
+
+ITS-prop:sliceByTahunAjaran a qb:SliceKey;
+    rdfs:label "slice by tahun ajaran"@en;
+    qb:componentProperty ITS:tahunAjaran, ITS-dimensi:tahunAjaran ;
+    .
+
+ITS-prop:sliceByJenjangPendidikan a qb:SliceKey;
+    rdfs:label "slice by jenjang pendidikan S1,S2,S3"@en;
+    qb:componentProperty ITS:jenjangPendidikan, ITS-dimensi:jenjangPendidikan ;
+    .
+	
+# ------------------------------------------------------------------
+ITS-stats:DataStructureDefinition-ITS02 a qb:DataStructureDefinition;
+    qb:component 
+    # The dimensions
+        [ qb:dimension ITS-dimensi:fakultas;],
+        [ qb:dimension ITS-dimensi:jurusan;];
+		
+        
+    # The measure(s)
+		  qb:measure ITS-prop:jumlahDosen;
+     # The attributes
+    qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
+                   qb:componentRequired "true"^^xsd:boolean;
+                   qb:componentAttachment qb:DataSet; ] ;
+    
+    # slices
+     qb:component [qb:sliceKey ITS-prop:sliceByFakultas;], 
+				  [qb:sliceKey ITS-prop:sliceByJurusan;] ;
+    .
+    
+ITS-prop:sliceByFakultas a qb:SliceKey;
+    rdfs:label "slice by fakultas"@en;
+    qb:componentProperty ITS:Fakultas, ITS-dimensi:fakultas ;
+    .
+
+ITS-prop:sliceByJurusan a qb:SliceKey;
+    rdfs:label "slice by jurusan"@en;
+    qb:componentProperty ITS:Jurusan, ITS-dimensi:jurusan ;
+    .
+
+   
+# ---------------------------DATA SET-------------------------
+	
+:dataset-ITS01 a qb:DataSet;
+    dct:title       "Data jumlah mahasiswa dan dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    rdfs:comment    "Data jumlah mahasiswa dan dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    dct:description "Data jumlah mahasiswa dan dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    dct:publisher   "Sistem informasi ITS "^^xsd:String ;
+    dct:issued      "2015-12-08"^^xsd:date;
+    dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
+	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
+qb:structure ITS-stats:DataStructureDefinition-ITS01 ;  
+   sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
+ 
+	.
+#-----------------------------------
+:dataset-ITS02 a qb:DataSet;
+    dct:title       "Data jumlah dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    rdfs:comment    "Data jumlah dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    dct:description "Data jumlah dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    dct:publisher   "Sistem informasi ITS "^^xsd:String ;
+    dct:issued      "2015-12-08"^^xsd:date;
+    dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
+	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
+qb:structure ITS-stats:DataStructureDefinition-ITS02 ;  
+   sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
+
+	.
+	
+# -------------------------OBSERVATIONS--------------------
+
+ITS-stats:101 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_fisika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    412 ;
+	ITS-prop:jumlahMahasiswaDO	    7 ;
+	ITS-prop:jumlahMahasiswaLulus	51 .
+	
+ITS-stats:102 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_matematika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    303 ;
+	ITS-prop:jumlahMahasiswaDO	    3 ;
+	ITS-prop:jumlahMahasiswaLulus	65 .
+
+ITS-stats:103 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_statistika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    412 ;
+	ITS-prop:jumlahMahasiswaDO	    3 ;
+	ITS-prop:jumlahMahasiswaLulus	83 .
+
+ITS-stats:104 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_kimia ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    366 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	81 .
+
+ITS-stats:105 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_biologi ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    302 ;
+	ITS-prop:jumlahMahasiswaDO	    0 ;
+	ITS-prop:jumlahMahasiswaLulus	31 .
+
+ITS-stats:201 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_mesin ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    802 ;
+	ITS-prop:jumlahMahasiswaDO	    13 ;
+	ITS-prop:jumlahMahasiswaLulus	158 .
+
+ITS-stats:202 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_elektro ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    893 ;
+	ITS-prop:jumlahMahasiswaDO	    28 ;
+	ITS-prop:jumlahMahasiswaLulus	288 .
+   
+ITS-stats:203 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_kimia ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    640 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	196 .
+
+ITS-stats:204 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_fisika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    430 ;
+	ITS-prop:jumlahMahasiswaDO	    1 ;
+	ITS-prop:jumlahMahasiswaLulus	110 .
+	
+ITS-stats:205 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_industri ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    689 ;
+	ITS-prop:jumlahMahasiswaDO	    9 ;
+	ITS-prop:jumlahMahasiswaLulus	150 .
+	
+ITS-stats:206 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_manajemen_bisnis ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    0 ;
+	ITS-prop:jumlahMahasiswaDO	    0 ;
+	ITS-prop:jumlahMahasiswaLulus	0 .
+
+ITS-stats:207 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_material ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    356 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	2 .
+
+ITS-stats:208 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_manjemen_jaringan ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    356 ;
+	ITS-prop:jumlahMahasiswaDO	    0 ;
+	ITS-prop:jumlahMahasiswaLulus	0 .
+
+ITS-stats:301 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_sipil ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    663 ;
+	ITS-prop:jumlahMahasiswaDO	    21 ;
+	ITS-prop:jumlahMahasiswaLulus	187 .
+
+ITS-stats:302 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_arsitektur ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    432 ;
+	ITS-prop:jumlahMahasiswaDO	    6 ;
+	ITS-prop:jumlahMahasiswaLulus	119 .
+
+ITS-stats:303 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_lingkungan ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    492 ;
+	ITS-prop:jumlahMahasiswaDO	    4 ;
+	ITS-prop:jumlahMahasiswaLulus	121 .
+
+ITS-stats:304 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_desain_produk ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    781 ;
+	ITS-prop:jumlahMahasiswaDO	    17 ;
+	ITS-prop:jumlahMahasiswaLulus	99 .
+
+ITS-stats:305 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_geomatika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    258 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	49 .
+
+ITS-stats:306 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_perencanaan_wilayah_kota ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    308 ;
+	ITS-prop:jumlahMahasiswaDO	    4 ;
+	ITS-prop:jumlahMahasiswaLulus	44 .
+
+ITS-stats:307 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_geofisika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    0 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	0 .
+
+ITS-stats:308 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTSP ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_desain_interior ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    0 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	0 .
+
+ITS-stats:401 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTK ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_perkapalan ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    516 ;
+	ITS-prop:jumlahMahasiswaDO	    11 ;
+	ITS-prop:jumlahMahasiswaLulus	50 .
+
+ITS-stats:402 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTK ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_sistem_perkapalan ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    456 ;
+	ITS-prop:jumlahMahasiswaDO	    6 ;
+	ITS-prop:jumlahMahasiswaLulus	91 .
+
+ITS-stats:403 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTK ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_sistem_perkapalan_dg ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    0 ;
+	ITS-prop:jumlahMahasiswaDO	    0 ;
+	ITS-prop:jumlahMahasiswaLulus	0 .
+
+ITS-stats:404 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTK ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_kelautan ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    523 ;
+	ITS-prop:jumlahMahasiswaDO	    4 ;
+	ITS-prop:jumlahMahasiswaLulus	79 .
+	
+ITS-stats:405 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTK ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_transportasi_laut ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    0 ;
+	ITS-prop:jumlahMahasiswaDO	    2 ;
+	ITS-prop:jumlahMahasiswaLulus	0 .
+
+ITS-stats:501 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTIf ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_informatika ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    862 ;
+	ITS-prop:jumlahMahasiswaDO	    17 ;
+	ITS-prop:jumlahMahasiswaLulus	154 .
+
+ITS-stats:501 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS01 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTIf ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_sistem_informasi ;
+	ITS-dimensi:tahunAjaran     	ITS-konsep:tahunAjaran_2010_2011 ;   
+	ITS-dimensi:jenjangPendidikan 	ITS-konsep:jenjangPendidikan_S1 ;                  
+	ITS-prop:jumlahMahasiswa	    641 ;
+	ITS-prop:jumlahMahasiswaDO	    13 ;
+	ITS-prop:jumlahMahasiswaLulus	66 .	
+	
+ITS-stats:dosen_001 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_fisika ;         
+	ITS-prop:jumlahDosen	    35 .
+
+ITS-stats:dosen_002 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_matematika ;         
+	ITS-prop:jumlahDosen	    47 .
+
+ITS-stats:dosen_003 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_statistika ;         
+	ITS-prop:jumlahDosen	    41 .
+
+ITS-stats:dosen_004 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_kimia ;         
+	ITS-prop:jumlahDosen	    34 .	
+	
+ITS-stats:dosen_005 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FMIPA ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_biologi ;         
+	ITS-prop:jumlahDosen	    21 .
+
+ITS-stats:dosen_006 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_mesin ;         
+	ITS-prop:jumlahDosen	    52 .
+
+ITS-stats:dosen_007 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_D3_t_mesin ;         
+	ITS-prop:jumlahDosen	    19 .	
+
+ITS-stats:dosen_008 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_elektro ;         
+	ITS-prop:jumlahDosen	    68 .
+
+ITS-stats:dosen_009 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_D3_t_elektro_PLN ;         
+	ITS-prop:jumlahDosen	    4 .
+	
+ITS-stats:dosen_010 a qb:Observation;
+    qb:dataSet  ITS:dataset-ITS02 ;
+    ITS-dimensi:fakultas      		ITS-fakultas:fakultas_FTI ;
+	ITS-dimensi:jurusan				ITS-jurusan:jurusan_t_kimia ;         
+	ITS-prop:jumlahDosen	    37 .
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
