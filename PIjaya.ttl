@@ -429,7 +429,7 @@ ITS:tahunAjaran_2014_2015
 
 ITS:tahunAjaran a skos:ConceptScheme ;
 	rdfs:label "Tahun Ajaran yang ada di ITS" ;
-	skos:hasTopConcept ITS:2010_2011, ITS:2011_2012, ITS:2012_2013, ITS:2013_2014, ITS:2014_2015 ;
+	skos:hasTopConcept ITS:tahunAjaran_2010_2011, ITS:tahunAjaran_2011_2012, ITS:tahunAjaran_2012_2013, ITS:tahunAjaran_2013_2014, ITS:tahunAjaran_2014_2015 ;
 	skos:notation "tahunAjaran" .
 	
 ITS:tahunAjaran
