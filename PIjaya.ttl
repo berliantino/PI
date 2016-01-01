@@ -566,7 +566,7 @@ ITS:dsd-ITS02 a qb:DataStructureDefinition ;
     # The measure(s)
 		qb:component  [qb:measure ITS:jumlahDosen];
 	
-
+.
 
 # ---------------------------DATA SET-------------------------
 	
