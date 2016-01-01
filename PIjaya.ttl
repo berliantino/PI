@@ -470,28 +470,37 @@ ITS:jenjangPendidikan
 # -----------------------------DIMENSION-----------------------------------
 
 ITS:fakultas  
-	qb:codeList ITS:fakultas ;
+	
 	a rdfs:Property, qb:DimensionProperty;
     rdfs:label "nama fakultas"@en;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept;
+	qb:codeList ITS:fakultas ;
+	.
 
 ITS:jurusan  
-	qb:codeList ITS:jurusan ;
+	
 	a rdfs:Property, qb:DimensionProperty;
     rdfs:label "nama jurusan"@en;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList ITS:jurusan ;
+	.
+	
 	
 ITS:tahunAjaran  
-	qb:codeList ITS:tahunAjaran ;
+	
 	a rdfs:Property, qb:DimensionProperty;
     rdfs:label "tahun ajaran"@en;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList ITS:tahunAjaran ;
+	.
 	
 ITS:jenjangPendidikan  
-	qb:codeList ITS:jenjangPendidikan ;
+	
 	a rdfs:Property, qb:DimensionProperty;
     rdfs:label "jenjang pendidikan (S1/S2/S3)"@en;
-	rdfs:range skos:Concept .
+	rdfs:range skos:Concept ;
+	qb:codeList ITS:jenjangPendidikan ;	
+	.
 	
 
 	
@@ -525,17 +534,24 @@ ITS:jumlahDosen  a qb:MeasureProperty;
 ITS:dsd-ITS01 a qb:DataStructureDefinition;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS:fakultas],
-        [ qb:dimension ITS:jurusan ],
-        [ qb:dimension ITS:tahunAjaran],
-		[ qb:dimension ITS:jenjangPendidikan];
+        [ qb:dimension ITS:fakultas; 			qb:order 1; qb:componentAttachment qb:Slice],
+        [ qb:dimension ITS:jurusan; 				qb:order 2; qb:componentAttachment qb:Slice],
+        [ qb:dimension ITS:tahunAjaran; 			qb:order 3; qb:componentAttachment qb:Slice],
+		[ qb:dimension ITS:jenjangPendidikan; 	qb:order 4; qb:componentAttachment qb:Slice];
         
     # The measure(s)
     qb:component 
 				[ qb:measure ITS:jumlahMahasiswa ],
 				[ qb:measure ITS:jumlahMahasiswaDO ],
 				[ qb:measure ITS:jumlahMahasiswaLulus ];
-    
+    # slices
+	qb:sliceKey ITS:sliceByJurusan ;
+	.
+	
+	ITS:sliceByJurusan a qb:SliceKey;
+	 rdfs:label "slice by jurusan"@en;
+	 rdfs:comment "Slice berdasarkan jurusan yang ada di ITS";
+     qb:componentProperty ITS:jurusan,ITS:fakultas, ITS:jenjangPendidikan, ITS:tahunAjaran ;
 	.
 	
 # ------------------------------------------------------------------
@@ -543,15 +559,23 @@ ITS:dsd-ITS01 a qb:DataStructureDefinition;
 ITS:dsd-ITS02 a qb:DataStructureDefinition ;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS:fakultas],
-        [ qb:dimension ITS:jurusan];
+        [ qb:dimension ITS:fakultas; 			qb:order 1; qb:componentAttachment qb:Slice],
+        [ qb:dimension ITS:jurusan ;				qb:order 2; qb:componentAttachment qb:Slice];
 		
         
     # The measure(s)
 		qb:component  [qb:measure ITS:jumlahDosen];
-		  
-   .
-   
+	
+
+	 # slices
+	qb:sliceKey ITS:sliceByJurusan ;
+	.
+	
+	ITS:sliceByJurusan a qb:SliceKey;
+	 rdfs:label "slice by jurusan"@en;
+	 rdfs:comment "Slice berdasarkan jurusan yang ada di ITS";
+     qb:componentProperty ITS:jurusan,ITS:fakultas ;
+	.
 # ---------------------------DATA SET-------------------------
 	
 ITS:dataset-ITS01 a qb:DataSet;
@@ -562,308 +586,1871 @@ ITS:dataset-ITS01 a qb:DataSet;
     dct:issued      "2015-12-08"^^xsd:date;
     dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
 	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
-qb:structure ITS:dsd-ITS01 ;  
+	qb:structure ITS:dsd-ITS01 ;  
    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
-   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+  
    
 	.
 #-----------------------------------
 ITS:dataset-ITS02 a qb:DataSet;
-    dct:title       "Data jumlah dosen ITS dari tahun ajaran 2010 - 2014"@en;
-    rdfs:comment    "Data jumlah dosen ITS dari tahun ajaran 2010 - 2014"@en;
-    dct:description "Data jumlah dosen ITS dari tahun ajaran 2010 - 2014"@en;
+    dct:title       "Data jumlah dosen ITS"@en;
+    rdfs:comment    "Data jumlah dosen ITS "@en;
+    dct:description "Data jumlah dosen ITS "@en;
     dct:publisher   "Sistem informasi ITS "^^xsd:String ;
     dct:issued      "2015-12-08"^^xsd:date;
     dct:subject		"Institut Teknologi Sepuluh Nopember"^^<http://id.dbpedia.org/page/Institut_Teknologi_Sepuluh_Nopember> ;
 	dct:creator		"Berliantino Muhammad Elsyaputera"^^xsd:String ;
-qb:structure ITS:dsd-ITS02 ;  
+	qb:structure ITS:dsd-ITS02 ;  
    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Population> ;
-  # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
-   
+
 	.
+
+# -------------------------SLICE OBSERVATIONS--------------------
+
+
+	ITS:slice1 a qb:Slice;	
+	qb:sliceStructure  ITS:slice_mahasiswa ;
+    ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
+	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
+    qb:observation ITS:01, ITS:02, ITS:03, ITS:04, ITS:05, ITS:06, ITS:07, ITS:08, ITS:09, ITS:10, ITS:11, ITS:12, ITS:13, ITS:14, ITS:15, ITS:16, ITS:17, ITS:18, ITS:19, ITS:20, ITS:21, ITS:22, ITS:23, ITS:24, ITS:25, ITS:26, ITS:27, ITS:28, ITS:29, ITS:30, ITS:31, ITS:32, ITS:33, ITS:34, ITS:35, ITS:36, ITS:37, ITS:38, ITS:39, ITS:40, ITS:41, ITS:42, ITS:43, ITS:44, ITS:45 ;
+    .
 	
-# -------------------------OBSERVATIONS--------------------
-
-ITS:101 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_fisika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    412 ;
-	ITS:jumlahMahasiswaDO	    7 ;
-	ITS:jumlahMahasiswaLulus	51 .
+	ITS:slice2 a qb:Slice;	
+	qb:sliceStructure  ITS:slice_mahasiswa ;
+    ITS:tahunAjaran     	ITS:tahunAjaran_2011_2012 ;   
+	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
+    qb:observation ITS:101, ITS:102, ITS:103, ITS:104, ITS:105, ITS:106, ITS:107, ITS:108, ITS:109, ITS:110, ITS:111, ITS:112, ITS:113, ITS:114, ITS:115, ITS:116, ITS:117, ITS:118, ITS:119, ITS:120, ITS:121, ITS:122, ITS:123, ITS:124, ITS:125, ITS:126, ITS:127, ITS:128, ITS:129, ITS:130, ITS:131, ITS:132, ITS:133, ITS:134, ITS:135, ITS:136, ITS:137, ITS:138, ITS:139, ITS:140, ITS:141, ITS:142, ITS:143, ITS:144, ITS:145 ;
+    .
 	
-ITS:102 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_matematika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    303 ;
-	ITS:jumlahMahasiswaDO	    3 ;
-	ITS:jumlahMahasiswaLulus	65 .
-
-ITS:103 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_statistika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    412 ;
-	ITS:jumlahMahasiswaDO	    3 ;
-	ITS:jumlahMahasiswaLulus	83 .
-
-ITS:104 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_kimia ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    366 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	81 .
-
-ITS:105 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_biologi ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    302 ;
-	ITS:jumlahMahasiswaDO	    0 ;
-	ITS:jumlahMahasiswaLulus	31 .
-
-ITS:201 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_mesin ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    802 ;
-	ITS:jumlahMahasiswaDO	    13 ;
-	ITS:jumlahMahasiswaLulus	158 .
-
-ITS:202 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_elektro ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    893 ;
-	ITS:jumlahMahasiswaDO	    28 ;
-	ITS:jumlahMahasiswaLulus	288 .
-   
-ITS:203 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_kimia ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    640 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	196 .
-
-ITS:204 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_fisika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    430 ;
-	ITS:jumlahMahasiswaDO	    1 ;
-	ITS:jumlahMahasiswaLulus	110 .
+	ITS:slice3 a qb:Slice;	
+	qb:sliceStructure  ITS:slice_mahasiswa ;
+    ITS:tahunAjaran     	ITS:tahunAjaran_2012_2013 ;   
+	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
+    qb:observation ITS:201, ITS:202, ITS:203, ITS:204, ITS:205, ITS:206, ITS:207, ITS:208, ITS:209, ITS:210, ITS:211, ITS:212, ITS:213, ITS:214, ITS:215, ITS:216, ITS:217, ITS:218, ITS:219, ITS:220, ITS:221, ITS:222, ITS:223, ITS:224, ITS:225, ITS:226, ITS:227, ITS:228, ITS:229, ITS:230, ITS:231, ITS:232, ITS:233, ITS:234, ITS:235, ITS:236, ITS:237, ITS:238, ITS:239, ITS:240, ITS:241, ITS:242, ITS:243, ITS:244, ITS:245 ;
+    .
 	
-ITS:205 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_industri ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    689 ;
-	ITS:jumlahMahasiswaDO	    9 ;
-	ITS:jumlahMahasiswaLulus	150 .
+	ITS:slice4 a qb:Slice;	
+	qb:sliceStructure  ITS:slice_mahasiswa ;
+    ITS:tahunAjaran     	ITS:tahunAjaran_2013_2014 ;   
+	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
+    qb:observation ITS:301, ITS:302, ITS:303, ITS:304, ITS:305, ITS:306, ITS:307, ITS:308, ITS:309, ITS:310, ITS:311, ITS:312, ITS:313, ITS:314, ITS:315, ITS:316, ITS:317, ITS:318, ITS:319, ITS:320, ITS:321, ITS:322, ITS:323, ITS:324, ITS:325, ITS:326, ITS:327, ITS:328, ITS:329, ITS:330, ITS:331, ITS:332, ITS:333, ITS:334, ITS:335, ITS:336, ITS:337, ITS:338, ITS:339, ITS:340, ITS:341, ITS:342, ITS:343, ITS:344, ITS:345 ;
+    .
 	
-ITS:206 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_manajemen_bisnis ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    0 ;
-	ITS:jumlahMahasiswaDO	    0 ;
-	ITS:jumlahMahasiswaLulus	0 .
-
-ITS:207 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_material ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    356 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	2 .
-
-ITS:208 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_manjemen_jaringan ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    356 ;
-	ITS:jumlahMahasiswaDO	    0 ;
-	ITS:jumlahMahasiswaLulus	0 .
-
-ITS:301 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_t_sipil ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    663 ;
-	ITS:jumlahMahasiswaDO	    21 ;
-	ITS:jumlahMahasiswaLulus	187 .
-
-ITS:302 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_arsitektur ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    432 ;
-	ITS:jumlahMahasiswaDO	    6 ;
-	ITS:jumlahMahasiswaLulus	119 .
-
-ITS:303 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_t_lingkungan ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    492 ;
-	ITS:jumlahMahasiswaDO	    4 ;
-	ITS:jumlahMahasiswaLulus	121 .
-
-ITS:304 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_desain_produk ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    781 ;
-	ITS:jumlahMahasiswaDO	    17 ;
-	ITS:jumlahMahasiswaLulus	99 .
-
-ITS:305 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_t_geomatika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    258 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	49 .
-
-ITS:306 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_perencanaan_wilayah_kota ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    308 ;
-	ITS:jumlahMahasiswaDO	    4 ;
-	ITS:jumlahMahasiswaLulus	44 .
-
-ITS:307 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_t_geofisika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    0 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	0 .
-
-ITS:308 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTSP ;
-	ITS:jurusan				ITS:jurusan_desain_interior ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    0 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	0 .
-
-ITS:401 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTK ;
-	ITS:jurusan				ITS:jurusan_t_perkapalan ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    516 ;
-	ITS:jumlahMahasiswaDO	    11 ;
-	ITS:jumlahMahasiswaLulus	50 .
-
-ITS:402 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTK ;
-	ITS:jurusan				ITS:jurusan_t_sistem_perkapalan ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    456 ;
-	ITS:jumlahMahasiswaDO	    6 ;
-	ITS:jumlahMahasiswaLulus	91 .
-
-ITS:403 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTK ;
-	ITS:jurusan				ITS:jurusan_t_sistem_perkapalan_dg ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    0 ;
-	ITS:jumlahMahasiswaDO	    0 ;
-	ITS:jumlahMahasiswaLulus	0 .
-
-ITS:404 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTK ;
-	ITS:jurusan				ITS:jurusan_t_kelautan ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    523 ;
-	ITS:jumlahMahasiswaDO	    4 ;
-	ITS:jumlahMahasiswaLulus	79 .
+	ITS:slice5 a qb:Slice;	
+	qb:sliceStructure  ITS:slice_mahasiswa ;
+    ITS:tahunAjaran     	ITS:tahunAjaran_2014_2015 ;   
+	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
+    qb:observation ITS:401, ITS:402, ITS:403, ITS:404, ITS:405, ITS:406, ITS:407, ITS:408, ITS:409, ITS:410, ITS:411, ITS:412, ITS:413, ITS:414, ITS:415, ITS:416, ITS:417, ITS:418, ITS:419, ITS:420, ITS:421, ITS:422, ITS:423, ITS:424, ITS:425, ITS:426, ITS:427, ITS:428, ITS:429, ITS:430, ITS:431, ITS:432, ITS:433, ITS:434, ITS:435, ITS:436, ITS:437, ITS:438, ITS:439, ITS:440, ITS:441, ITS:442, ITS:443, ITS:444, ITS:445 ;
+    .
 	
-ITS:405 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTK ;
-	ITS:jurusan				ITS:jurusan_transportasi_laut ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    0 ;
-	ITS:jumlahMahasiswaDO	    2 ;
-	ITS:jumlahMahasiswaLulus	0 .
-
-ITS:501 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTIf ;
-	ITS:jurusan				ITS:jurusan_t_informatika ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    862 ;
-	ITS:jumlahMahasiswaDO	    17 ;
-	ITS:jumlahMahasiswaLulus	154 .
-
-ITS:501 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS01 ;
-    ITS:fakultas      		ITS:fakultas_FTIf ;
-	ITS:jurusan				ITS:jurusan_t_sistem_informasi ;
-	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
-	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;                  
-	ITS:jumlahMahasiswa	    641 ;
-	ITS:jumlahMahasiswaDO	    13 ;
-	ITS:jumlahMahasiswaLulus	66 .	
 	
+	
+	
+	ITS:01 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_fisika;
+	ITS:jumlahMahasiswa      302;
+	ITS:jumlahMahasiswaLulus      51;
+	ITS:jumlahMahasiswaDO      7;
+	.
+	ITS:02 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_matematika;
+	ITS:jumlahMahasiswa      377;
+	ITS:jumlahMahasiswaLulus      65;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:03 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_statistika;
+	ITS:jumlahMahasiswa      412;
+	ITS:jumlahMahasiswaLulus      83;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:04 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_kimia;
+	ITS:jumlahMahasiswa      366;
+	ITS:jumlahMahasiswaLulus      81;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:05 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_biologi;
+	ITS:jumlahMahasiswa      302;
+	ITS:jumlahMahasiswaLulus      31;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:06 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_D3_statistika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:07 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_mesin;
+	ITS:jumlahMahasiswa      820;
+	ITS:jumlahMahasiswaLulus      158;
+	ITS:jumlahMahasiswaDO      13;
+	.
+	ITS:08 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_elektro;
+	ITS:jumlahMahasiswa      893;
+	ITS:jumlahMahasiswaLulus      288;
+	ITS:jumlahMahasiswaDO      28;
+	.
+	ITS:09 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_kimia;
+	ITS:jumlahMahasiswa      640;
+	ITS:jumlahMahasiswaLulus      110;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:10 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_fisika;
+	ITS:jumlahMahasiswa      430;
+	ITS:jumlahMahasiswaLulus      196;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:11 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_industri;
+	ITS:jumlahMahasiswa      689;
+	ITS:jumlahMahasiswaLulus      150;
+	ITS:jumlahMahasiswaDO      9;
+	.
+	ITS:12 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:13 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:14 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_KS_Disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:15 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_komputer_kontrol;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      9;
+	.
+	ITS:16 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:17 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_KS_disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:18 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_kimia;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:19 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:20 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_metrologi_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:21 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_multimedia_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:22 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_manajemen_bisnis;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:23 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_material;
+	ITS:jumlahMahasiswa      356;
+	ITS:jumlahMahasiswaLulus      43;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:24 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_manajemen_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:25 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_sipil;
+	ITS:jumlahMahasiswa      663;
+	ITS:jumlahMahasiswaLulus      187;
+	ITS:jumlahMahasiswaDO      21;
+	.
+	ITS:26 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_arsitektur;
+	ITS:jumlahMahasiswa      432;
+	ITS:jumlahMahasiswaLulus      119;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:27 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_lingkungan;
+	ITS:jumlahMahasiswa      492;
+	ITS:jumlahMahasiswaLulus      121;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:28 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_produk;
+	ITS:jumlahMahasiswa      781;
+	ITS:jumlahMahasiswaLulus      99;
+	ITS:jumlahMahasiswaDO      17;
+	.
+	ITS:29 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geomatika;
+	ITS:jumlahMahasiswa      258;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:30 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geodesi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      49;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:31 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_perencanaan_wilayah_kota;
+	ITS:jumlahMahasiswa      308;
+	ITS:jumlahMahasiswaLulus      44;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:32 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geofisika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:33 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_interior;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:34 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_perkapalan;
+	ITS:jumlahMahasiswa      516;
+	ITS:jumlahMahasiswaLulus      50;
+	ITS:jumlahMahasiswaDO      11;
+	.
+	ITS:35 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan;
+	ITS:jumlahMahasiswa      456;
+	ITS:jumlahMahasiswaLulus      91;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:36 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan_DG;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:37 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_kelautan;
+	ITS:jumlahMahasiswa      523;
+	ITS:jumlahMahasiswaLulus      79;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:38 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_transportasi_laut;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:39 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_t_informatika;
+	ITS:jumlahMahasiswa      862;
+	ITS:jumlahMahasiswaLulus      154;
+	ITS:jumlahMahasiswaDO      17;
+	.
+	ITS:40 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_sistem_informasi;
+	ITS:jumlahMahasiswa      641;
+	ITS:jumlahMahasiswaLulus      66;
+	ITS:jumlahMahasiswaDO      13;
+	.
+	ITS:41 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil_reg;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:42 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      11;
+	.
+	ITS:43 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:44 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil_kerjasama;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:45 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_MMT;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+
+		ITS:101 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_fisika;
+	ITS:jumlahMahasiswa      328;
+	ITS:jumlahMahasiswaLulus      54;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:102 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_matematika;
+	ITS:jumlahMahasiswa      414;
+	ITS:jumlahMahasiswaLulus      80;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:103 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_statistika;
+	ITS:jumlahMahasiswa      465;
+	ITS:jumlahMahasiswaLulus      90;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:104 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_kimia;
+	ITS:jumlahMahasiswa      414;
+	ITS:jumlahMahasiswaLulus      72;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:105 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_biologi;
+	ITS:jumlahMahasiswa      352;
+	ITS:jumlahMahasiswaLulus      29;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:106 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_D3_statistika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:107 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_mesin;
+	ITS:jumlahMahasiswa      816;
+	ITS:jumlahMahasiswaLulus      213;
+	ITS:jumlahMahasiswaDO      10;
+	.
+	ITS:108 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_elektro;
+	ITS:jumlahMahasiswa      915;
+	ITS:jumlahMahasiswaLulus      315;
+	ITS:jumlahMahasiswaDO      21;
+	.
+	ITS:109 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_kimia;
+	ITS:jumlahMahasiswa      672;
+	ITS:jumlahMahasiswaLulus      133;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:110 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_fisika;
+	ITS:jumlahMahasiswa      440;
+	ITS:jumlahMahasiswaLulus      212;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:111 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_industri;
+	ITS:jumlahMahasiswa      720;
+	ITS:jumlahMahasiswaLulus      144;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:112 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      9;
+	.
+	ITS:113 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:114 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_KS_Disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:115 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_komputer_kontrol;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      8;
+	.
+	ITS:116 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:117 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_KS_disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:118 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_kimia;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:119 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:120 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_metrologi_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:121 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_multimedia_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:122 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_manajemen_bisnis;
+	ITS:jumlahMahasiswa      37;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:123 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_material;
+	ITS:jumlahMahasiswa      434;
+	ITS:jumlahMahasiswaLulus      48;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:124 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_manajemen_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:125 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_sipil;
+	ITS:jumlahMahasiswa      674;
+	ITS:jumlahMahasiswaLulus      224;
+	ITS:jumlahMahasiswaDO      16;
+	.
+	ITS:126 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_arsitektur;
+	ITS:jumlahMahasiswa      435;
+	ITS:jumlahMahasiswaLulus      102;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:127 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_lingkungan;
+	ITS:jumlahMahasiswa      502;
+	ITS:jumlahMahasiswaLulus      116;
+	ITS:jumlahMahasiswaDO      9;
+	.
+	ITS:128 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_produk;
+	ITS:jumlahMahasiswa      787;
+	ITS:jumlahMahasiswaLulus      101;
+	ITS:jumlahMahasiswaDO      21;
+	.
+	ITS:129 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geomatika;
+	ITS:jumlahMahasiswa      280;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:130 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geodesi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      46;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:131 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_perencanaan_wilayah_kota;
+	ITS:jumlahMahasiswa      336;
+	ITS:jumlahMahasiswaLulus      46;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:132 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geofisika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:133 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_interior;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:134 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_perkapalan;
+	ITS:jumlahMahasiswa      566;
+	ITS:jumlahMahasiswaLulus      43;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:135 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan;
+	ITS:jumlahMahasiswa      437;
+	ITS:jumlahMahasiswaLulus      118;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:136 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan_DG;
+	ITS:jumlahMahasiswa      24;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:137 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_kelautan;
+	ITS:jumlahMahasiswa      518;
+	ITS:jumlahMahasiswaLulus      97;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:138 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_transportasi_laut;
+	ITS:jumlahMahasiswa      37;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:139 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_t_informatika;
+	ITS:jumlahMahasiswa      877;
+	ITS:jumlahMahasiswaLulus      166;
+	ITS:jumlahMahasiswaDO      9;
+	.
+	ITS:140 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_sistem_informasi;
+	ITS:jumlahMahasiswa      729;
+	ITS:jumlahMahasiswaLulus      92;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:141 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil_reg;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:142 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:143 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      12;
+	.
+	ITS:144 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil_kerjasama;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:145 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_MMT;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+
+	ITS:201 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_fisika;
+	ITS:jumlahMahasiswa      352;
+	ITS:jumlahMahasiswaLulus      77;
+	ITS:jumlahMahasiswaDO      11;
+	.
+	ITS:202 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_matematika;
+	ITS:jumlahMahasiswa      425;
+	ITS:jumlahMahasiswaLulus      80;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:203 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_statistika;
+	ITS:jumlahMahasiswa      508;
+	ITS:jumlahMahasiswaLulus      116;
+	ITS:jumlahMahasiswaDO      7;
+	.
+	ITS:204 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_kimia;
+	ITS:jumlahMahasiswa      451;
+	ITS:jumlahMahasiswaLulus      72;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:205 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_biologi;
+	ITS:jumlahMahasiswa      353;
+	ITS:jumlahMahasiswaLulus      75;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:206 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_D3_statistika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:207 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_mesin;
+	ITS:jumlahMahasiswa      809;
+	ITS:jumlahMahasiswaLulus      218;
+	ITS:jumlahMahasiswaDO      19;
+	.
+	ITS:208 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_elektro;
+	ITS:jumlahMahasiswa      881;
+	ITS:jumlahMahasiswaLulus      388;
+	ITS:jumlahMahasiswaDO      25;
+	.
+	ITS:209 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_kimia;
+	ITS:jumlahMahasiswa      661;
+	ITS:jumlahMahasiswaLulus      134;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:210 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_fisika;
+	ITS:jumlahMahasiswa      453;
+	ITS:jumlahMahasiswaLulus      190;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:211 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_industri;
+	ITS:jumlahMahasiswa      699;
+	ITS:jumlahMahasiswaLulus      158;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:212 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:213 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:214 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_KS_Disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:215 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_komputer_kontrol;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:216 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:217 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_KS_disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:218 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_kimia;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:219 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:220 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_metrologi_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:221 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_multimedia_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:222 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_manajemen_bisnis;
+	ITS:jumlahMahasiswa      73;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:223 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_material;
+	ITS:jumlahMahasiswa      478;
+	ITS:jumlahMahasiswaLulus      84;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:224 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_manajemen_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:225 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_sipil;
+	ITS:jumlahMahasiswa      683;
+	ITS:jumlahMahasiswaLulus      225;
+	ITS:jumlahMahasiswaDO      13;
+	.
+	ITS:226 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_arsitektur;
+	ITS:jumlahMahasiswa      449;
+	ITS:jumlahMahasiswaLulus      78;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:227 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_lingkungan;
+	ITS:jumlahMahasiswa      497;
+	ITS:jumlahMahasiswaLulus      102;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:228 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_produk;
+	ITS:jumlahMahasiswa      829;
+	ITS:jumlahMahasiswaLulus      124;
+	ITS:jumlahMahasiswaDO      20;
+	.
+	ITS:229 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geomatika;
+	ITS:jumlahMahasiswa      345;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:230 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geodesi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      43;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:231 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_perencanaan_wilayah_kota;
+	ITS:jumlahMahasiswa      342;
+	ITS:jumlahMahasiswaLulus      66;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:232 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geofisika;
+	ITS:jumlahMahasiswa      26;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:233 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_interior;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:234 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_perkapalan;
+	ITS:jumlahMahasiswa      568;
+	ITS:jumlahMahasiswaLulus      94;
+	ITS:jumlahMahasiswaDO      15;
+	.
+	ITS:235 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan;
+	ITS:jumlahMahasiswa      477;
+	ITS:jumlahMahasiswaLulus      126;
+	ITS:jumlahMahasiswaDO      7;
+	.
+	ITS:236 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan_DG;
+	ITS:jumlahMahasiswa      61;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:237 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_kelautan;
+	ITS:jumlahMahasiswa      541;
+	ITS:jumlahMahasiswaLulus      108;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:238 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_transportasi_laut;
+	ITS:jumlahMahasiswa      85;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:239 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_t_informatika;
+	ITS:jumlahMahasiswa      891;
+	ITS:jumlahMahasiswaLulus      180;
+	ITS:jumlahMahasiswaDO      16;
+	.
+	ITS:240 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_sistem_informasi;
+	ITS:jumlahMahasiswa      744;
+	ITS:jumlahMahasiswaLulus      158;
+	ITS:jumlahMahasiswaDO      11;
+	.
+	ITS:241 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil_reg;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:242 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:243 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      12;
+	.
+	ITS:244 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil_kerjasama;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:245 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_MMT;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+
+	ITS:301 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_fisika;
+	ITS:jumlahMahasiswa      395;
+	ITS:jumlahMahasiswaLulus      68;
+	ITS:jumlahMahasiswaDO      11;
+	.
+	ITS:302 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_matematika;
+	ITS:jumlahMahasiswa      446;
+	ITS:jumlahMahasiswaLulus      91;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:303 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_statistika;
+	ITS:jumlahMahasiswa      520;
+	ITS:jumlahMahasiswaLulus      136;
+	ITS:jumlahMahasiswaDO      7;
+	.
+	ITS:304 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_kimia;
+	ITS:jumlahMahasiswa      469;
+	ITS:jumlahMahasiswaLulus      87;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:305 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_biologi;
+	ITS:jumlahMahasiswa      339;
+	ITS:jumlahMahasiswaLulus      92;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:306 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_D3_statistika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:307 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_mesin;
+	ITS:jumlahMahasiswa      856;
+	ITS:jumlahMahasiswaLulus      201;
+	ITS:jumlahMahasiswaDO      19;
+	.
+	ITS:308 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_elektro;
+	ITS:jumlahMahasiswa      906;
+	ITS:jumlahMahasiswaLulus      296;
+	ITS:jumlahMahasiswaDO      25;
+	.
+	ITS:309 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_kimia;
+	ITS:jumlahMahasiswa      660;
+	ITS:jumlahMahasiswaLulus      104;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:310 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_fisika;
+	ITS:jumlahMahasiswa      523;
+	ITS:jumlahMahasiswaLulus      196;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:311 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_industri;
+	ITS:jumlahMahasiswa      720;
+	ITS:jumlahMahasiswaLulus      158;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:312 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:313 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:314 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_KS_Disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:315 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_komputer_kontrol;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:316 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:317 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_KS_disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:318 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_kimia;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:319 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:320 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_metrologi_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:321 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_multimedia_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:322 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_manajemen_bisnis;
+	ITS:jumlahMahasiswa      67;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:323 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_material;
+	ITS:jumlahMahasiswa      527;
+	ITS:jumlahMahasiswaLulus      85;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:324 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_manajemen_jaringan;
+	ITS:jumlahMahasiswa      47;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:325 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_sipil;
+	ITS:jumlahMahasiswa      699;
+	ITS:jumlahMahasiswaLulus      241;
+	ITS:jumlahMahasiswaDO      23;
+	.
+	ITS:326 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_arsitektur;
+	ITS:jumlahMahasiswa      443;
+	ITS:jumlahMahasiswaLulus      90;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:327 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_lingkungan;
+	ITS:jumlahMahasiswa      510;
+	ITS:jumlahMahasiswaLulus      92;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:328 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_produk;
+	ITS:jumlahMahasiswa      832;
+	ITS:jumlahMahasiswaLulus      102;
+	ITS:jumlahMahasiswaDO      22;
+	.
+	ITS:329 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geomatika;
+	ITS:jumlahMahasiswa      373;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:330 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geodesi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      76;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:331 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_perencanaan_wilayah_kota;
+	ITS:jumlahMahasiswa      346;
+	ITS:jumlahMahasiswaLulus      76;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:332 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geofisika;
+	ITS:jumlahMahasiswa      84;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:333 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_interior;
+	ITS:jumlahMahasiswa      59;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:334 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_perkapalan;
+	ITS:jumlahMahasiswa      559;
+	ITS:jumlahMahasiswaLulus      84;
+	ITS:jumlahMahasiswaDO      17;
+	.
+	ITS:335 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan;
+	ITS:jumlahMahasiswa      498;
+	ITS:jumlahMahasiswaLulus      113;
+	ITS:jumlahMahasiswaDO      22;
+	.
+	ITS:336 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan_DG;
+	ITS:jumlahMahasiswa      102;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:337 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_kelautan;
+	ITS:jumlahMahasiswa      576;
+	ITS:jumlahMahasiswaLulus      105;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:338 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_transportasi_laut;
+	ITS:jumlahMahasiswa      135;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:339 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_t_informatika;
+	ITS:jumlahMahasiswa      945;
+	ITS:jumlahMahasiswaLulus      143;
+	ITS:jumlahMahasiswaDO      41;
+	.
+	ITS:340 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_sistem_informasi;
+	ITS:jumlahMahasiswa      834;
+	ITS:jumlahMahasiswaLulus      138;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:341 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil_reg;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:342 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:343 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      7;
+	.
+	ITS:344 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil_kerjasama;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:345 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_MMT;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      5;
+	.
+
+	ITS:401 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_fisika;
+	ITS:jumlahMahasiswa      421;
+	ITS:jumlahMahasiswaLulus      65;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:402 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_matematika;
+	ITS:jumlahMahasiswa      460;
+	ITS:jumlahMahasiswaLulus      78;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:403 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_statistika;
+	ITS:jumlahMahasiswa      525;
+	ITS:jumlahMahasiswaLulus      135;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:404 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_kimia;
+	ITS:jumlahMahasiswa      481;
+	ITS:jumlahMahasiswaLulus      80;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:405 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_biologi;
+	ITS:jumlahMahasiswa      356;
+	ITS:jumlahMahasiswaLulus      59;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:406 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_D3_statistika;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:407 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_mesin;
+	ITS:jumlahMahasiswa      890;
+	ITS:jumlahMahasiswaLulus      169;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:408 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_elektro;
+	ITS:jumlahMahasiswa      910;
+	ITS:jumlahMahasiswaLulus      320;
+	ITS:jumlahMahasiswaDO      30;
+	.
+	ITS:409 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_kimia;
+	ITS:jumlahMahasiswa      649;
+	ITS:jumlahMahasiswaLulus      129;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:410 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_fisika;
+	ITS:jumlahMahasiswa      524;
+	ITS:jumlahMahasiswaLulus      206;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:411 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_industri;
+	ITS:jumlahMahasiswa      700;
+	ITS:jumlahMahasiswaLulus      144;
+	ITS:jumlahMahasiswaDO      18;
+	.
+	ITS:412 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      5;
+	.
+	ITS:413 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:414 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin_KS_Disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:415 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_komputer_kontrol;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:416 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_PLN;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:417 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro_KS_disnaker;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:418 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_kimia;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:419 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:420 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_metrologi_instrumentasi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:421 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_multimedia_jaringan;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:422 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_manajemen_bisnis;
+	ITS:jumlahMahasiswa      67;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:423 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_material;
+	ITS:jumlahMahasiswa      568;
+	ITS:jumlahMahasiswaLulus      91;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:424 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_manajemen_jaringan;
+	ITS:jumlahMahasiswa      99;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:425 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_sipil;
+	ITS:jumlahMahasiswa      683;
+	ITS:jumlahMahasiswaLulus      222;
+	ITS:jumlahMahasiswaDO      18;
+	.
+	ITS:426 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_arsitektur;
+	ITS:jumlahMahasiswa      442;
+	ITS:jumlahMahasiswaLulus      90;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:427 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_lingkungan;
+	ITS:jumlahMahasiswa      492;
+	ITS:jumlahMahasiswaLulus      138;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:428 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_produk;
+	ITS:jumlahMahasiswa      791;
+	ITS:jumlahMahasiswaLulus      106;
+	ITS:jumlahMahasiswaDO      19;
+	.
+	ITS:429 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geomatika;
+	ITS:jumlahMahasiswa      401;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      1;
+	.
+	ITS:430 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geodesi;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      45;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:431 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_perencanaan_wilayah_kota;
+	ITS:jumlahMahasiswa      376;
+	ITS:jumlahMahasiswaLulus      65;
+	ITS:jumlahMahasiswaDO      2;
+	.
+	ITS:432 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geofisika;
+	ITS:jumlahMahasiswa      145;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:433 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_interior;
+	ITS:jumlahMahasiswa      115;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:434 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_perkapalan;
+	ITS:jumlahMahasiswa      537;
+	ITS:jumlahMahasiswaLulus      89;
+	ITS:jumlahMahasiswaDO      3;
+	.
+	ITS:435 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan;
+	ITS:jumlahMahasiswa      528;
+	ITS:jumlahMahasiswaLulus      115;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:436 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan_DG;
+	ITS:jumlahMahasiswa      140;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:437 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_kelautan;
+	ITS:jumlahMahasiswa      600;
+	ITS:jumlahMahasiswaLulus      109;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:438 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_transportasi_laut;
+	ITS:jumlahMahasiswa      177;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:439 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_t_informatika;
+	ITS:jumlahMahasiswa      909;
+	ITS:jumlahMahasiswaLulus      186;
+	ITS:jumlahMahasiswaDO      33;
+	.
+	ITS:440 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_sistem_informasi;
+	ITS:jumlahMahasiswa      860;
+	ITS:jumlahMahasiswaLulus      105;
+	ITS:jumlahMahasiswaDO      19;
+	.
+	ITS:441 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil_reg;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      0;
+	.
+	ITS:442 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      4;
+	.
+	ITS:443 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      10;
+	.
+	ITS:444 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil_kerjasama;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      6;
+	.
+	ITS:445 a qb:Observation;
+	qb:dataSet ITS:dataset-ITS01;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_MMT;
+	ITS:jumlahMahasiswa      0;
+	ITS:jumlahMahasiswaLulus      0;
+	ITS:jumlahMahasiswaDO      10;
+	.
+		
 ITS:dosen_001 a qb:Observation;
     qb:dataSet  ITS:dataset-ITS02 ;
     ITS:fakultas      		ITS:fakultas_FMIPA ;
@@ -923,3 +2510,4 @@ ITS:dosen_010 a qb:Observation;
     ITS:fakultas      		ITS:fakultas_FTI ;
 	ITS:jurusan				ITS:jurusan_t_kimia ;         
 	ITS:jumlahDosen	    37 .
+
