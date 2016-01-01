@@ -534,8 +534,8 @@ ITS:jumlahDosen  a qb:MeasureProperty;
 ITS:dsd-ITS01 a qb:DataStructureDefinition;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS:fakultas; 			qb:order 1; qb:componentAttachment qb:Slice],
-        [ qb:dimension ITS:jurusan; 				qb:order 2; qb:componentAttachment qb:Slice],
+        [ qb:dimension ITS:fakultas; 			qb:order 1; ],
+        [ qb:dimension ITS:jurusan; 				qb:order 2;],
         [ qb:dimension ITS:tahunAjaran; 			qb:order 3; qb:componentAttachment qb:Slice],
 		[ qb:dimension ITS:jenjangPendidikan; 	qb:order 4; qb:componentAttachment qb:Slice];
         
@@ -551,7 +551,7 @@ ITS:dsd-ITS01 a qb:DataStructureDefinition;
 	ITS:sliceByJurusan a qb:SliceKey;
 	 rdfs:label "slice by jurusan"@en;
 	 rdfs:comment "Slice berdasarkan jurusan yang ada di ITS";
-     qb:componentProperty ITS:jurusan,ITS:fakultas, ITS:jenjangPendidikan, ITS:tahunAjaran ;
+     qb:componentProperty ITS:jenjangPendidikan, ITS:tahunAjaran ;
 	.
 	
 # ------------------------------------------------------------------
@@ -559,23 +559,15 @@ ITS:dsd-ITS01 a qb:DataStructureDefinition;
 ITS:dsd-ITS02 a qb:DataStructureDefinition ;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS:fakultas; 			qb:order 1; qb:componentAttachment qb:Slice],
-        [ qb:dimension ITS:jurusan ;				qb:order 2; qb:componentAttachment qb:Slice];
+        [ qb:dimension ITS:fakultas; 			qb:order 1;],
+        [ qb:dimension ITS:jurusan ;				qb:order 2; ];
 		
         
     # The measure(s)
 		qb:component  [qb:measure ITS:jumlahDosen];
 	
 
-	 # slices
-	qb:sliceKey ITS:sliceByJurusan ;
-	.
-	
-	ITS:sliceByJurusan a qb:SliceKey;
-	 rdfs:label "slice by jurusan"@en;
-	 rdfs:comment "Slice berdasarkan jurusan yang ada di ITS";
-     qb:componentProperty ITS:jurusan,ITS:fakultas ;
-	.
+
 # ---------------------------DATA SET-------------------------
 	
 ITS:dataset-ITS01 a qb:DataSet;
@@ -644,8 +636,7 @@ ITS:dataset-ITS02 a qb:DataSet;
     .
 	
 	
-	
-	
+		
 	ITS:01 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
 	ITS:fakultas      ITS:fakultas_FMIPA;
