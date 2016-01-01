@@ -643,9 +643,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	ITS:jurusan      ITS:jurusan_fisika;
 	ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;
    ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ; 
- ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;
-   ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ; 
- ITS:jumlahMahasiswa      302;
+	ITS:jumlahMahasiswa      302;
 	ITS:jumlahMahasiswaLulus      51;
 	ITS:jumlahMahasiswaDO      7;
 	.
