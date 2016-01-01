@@ -534,10 +534,10 @@ ITS:jumlahDosen  a qb:MeasureProperty;
 ITS:dsd-ITS01 a qb:DataStructureDefinition;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS:fakultas; 			qb:order 1; ],
-        [ qb:dimension ITS:jurusan; 				qb:order 2;],
-        [ qb:dimension ITS:tahunAjaran; 			qb:order 3; qb:componentAttachment qb:Slice],
-		[ qb:dimension ITS:jenjangPendidikan; 	qb:order 4; qb:componentAttachment qb:Slice];
+        [ qb:dimension ITS:fakultas; 			],
+        [ qb:dimension ITS:jurusan; 				],
+        [ qb:dimension ITS:tahunAjaran; 			 qb:componentAttachment qb:Slice],
+		[ qb:dimension ITS:jenjangPendidikan; 	 qb:componentAttachment qb:Slice];
         
     # The measure(s)
     qb:component 
@@ -559,8 +559,8 @@ ITS:dsd-ITS01 a qb:DataStructureDefinition;
 ITS:dsd-ITS02 a qb:DataStructureDefinition ;
     qb:component 
     # The dimensions
-        [ qb:dimension ITS:fakultas; 			qb:order 1;],
-        [ qb:dimension ITS:jurusan ;				qb:order 2; ];
+        [ qb:dimension ITS:fakultas; 		],
+        [ qb:dimension ITS:jurusan ;				 ];
 		
         
     # The measure(s)
