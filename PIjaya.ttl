@@ -2730,6 +2730,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	ITS:jumlahMahasiswaLulus      0;
 	ITS:jumlahMahasiswaDO      0;
 	.
+	
 	ITS:423 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
 	ITS:fakultas      ITS:fakultas_FTSP;
@@ -2740,6 +2741,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	ITS:jumlahMahasiswaLulus      91;
 	ITS:jumlahMahasiswaDO      0;
 	.
+	
 	ITS:424 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
 	ITS:fakultas      ITS:fakultas_FTSP;
@@ -2963,7 +2965,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 		
 		ITS:2101 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -2974,7 +2976,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2102 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_matematika;
@@ -2985,7 +2987,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2103 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -2996,7 +2998,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2104 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -3007,7 +3009,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2105 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_hayati ;
@@ -3018,7 +3020,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2106 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_non_hayati ;
@@ -3029,7 +3031,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2107 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_pengajaran ;
@@ -3040,7 +3042,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2108 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -3051,7 +3053,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2109 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rek_perancangan_dan_manufaktur ;
@@ -3062,7 +3064,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2110 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_energi ;
@@ -3073,7 +3075,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2111 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kesehatan_dan_keselamatan_kerja ;
@@ -3084,7 +3086,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2112 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_rekayasa_energi ;
@@ -3095,7 +3097,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2113 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_desain_mekanikal ;
@@ -3106,7 +3108,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2114 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_tenaga ;
@@ -3117,7 +3119,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2115 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_pengaturan ;
@@ -3128,7 +3130,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2116 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telekomunikasi ;
@@ -3139,7 +3141,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2117 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_distribusi_tenagalist ;
@@ -3150,7 +3152,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2118 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -3161,7 +3163,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2119 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_informatika_komp;
@@ -3172,7 +3174,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2120 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telematika ;
@@ -3183,7 +3185,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2121 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -3194,7 +3196,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2122 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_fisika;
@@ -3205,7 +3207,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2123 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -3216,7 +3218,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2124 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_manajemen_industri ;
@@ -3227,7 +3229,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2125 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rantai_pasok ;
@@ -3238,7 +3240,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2126 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_ergonomi_dan_keselamatan_industri ;
@@ -3249,7 +3251,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2127 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_kinerja_strategis ;
@@ -3260,7 +3262,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2128 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -3271,7 +3273,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2129 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_material;
@@ -3282,7 +3284,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2130 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_struktur ;
@@ -3293,7 +3295,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2131 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_konstruksi ;
@@ -3304,7 +3306,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2132 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_penginderaan_jauh ;
@@ -3315,7 +3317,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2133 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_sumber_air ;
@@ -3326,7 +3328,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2134 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_rekayasa ;
@@ -3337,7 +3339,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2135 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_asset ;
@@ -3348,7 +3350,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2136 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -3359,7 +3361,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2137 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_pemukiman_kota_dan_lingkungan ;
@@ -3370,7 +3372,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2138 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_dan_kritik_arsitek ;
@@ -3381,7 +3383,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2139 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_kota ;
@@ -3392,7 +3394,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2140 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitek_lingkungan ;
@@ -3403,7 +3405,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2141 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_perencanaan_kota ;
@@ -3414,7 +3416,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2142 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_studi_pembangunan ;
@@ -3425,7 +3427,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2143 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_arsitektur ;
@@ -3436,7 +3438,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2144 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_real_estate ;
@@ -3447,7 +3449,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2145 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -3458,7 +3460,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2146 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_manajemen_lingkungan ;
@@ -3469,7 +3471,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2147 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_rekayasa_pengendalian_lingkungan ;
@@ -3480,7 +3482,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2148 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geomatika;
@@ -3491,7 +3493,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2149 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geotermal;
@@ -3502,7 +3504,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2150 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -3513,7 +3515,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2151 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perancangan_bang_laut ;
@@ -3524,7 +3526,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2152 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_trans_kelautan ;
@@ -3535,7 +3537,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2153 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_produk_dan_material_laut ;
@@ -3546,7 +3548,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2154 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -3557,7 +3559,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2155 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_sistem_pengend_laut ;
@@ -3568,7 +3570,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2156 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_manajemen_pantai ;
@@ -3579,7 +3581,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2157 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_t_informatika;
@@ -3590,7 +3592,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2158 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
@@ -3601,7 +3603,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2159 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2010_2011 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_MMT;
@@ -3614,7 +3616,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 			
 		ITS:2201 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -3625,7 +3627,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2202 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_matematika;
@@ -3636,7 +3638,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2203 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -3647,7 +3649,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2204 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -3658,7 +3660,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2205 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_hayati ;
@@ -3669,7 +3671,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2206 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_non_hayati ;
@@ -3680,7 +3682,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2207 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_pengajaran ;
@@ -3691,7 +3693,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2208 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -3702,7 +3704,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2209 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rek_perancangan_dan_manufaktur ;
@@ -3713,7 +3715,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2210 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_energi ;
@@ -3724,7 +3726,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2211 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kesehatan_dan_keselamatan_kerja ;
@@ -3735,7 +3737,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2212 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_rekayasa_energi ;
@@ -3746,7 +3748,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2213 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_desain_mekanikal ;
@@ -3757,7 +3759,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2214 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_tenaga ;
@@ -3768,7 +3770,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2215 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_pengaturan ;
@@ -3779,7 +3781,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2216 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telekomunikasi ;
@@ -3790,7 +3792,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2217 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_distribusi_tenagalist ;
@@ -3801,7 +3803,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2218 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -3812,7 +3814,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2219 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_informatika_komp;
@@ -3823,7 +3825,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2220 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telematika ;
@@ -3834,7 +3836,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2221 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -3845,7 +3847,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2222 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_fisika;
@@ -3856,7 +3858,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2223 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -3867,7 +3869,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2224 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_manajemen_industri ;
@@ -3878,7 +3880,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2225 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rantai_pasok ;
@@ -3889,7 +3891,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2226 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_ergonomi_dan_keselamatan_industri ;
@@ -3900,7 +3902,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2227 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_kinerja_strategis ;
@@ -3911,7 +3913,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2228 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -3922,7 +3924,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2229 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_material;
@@ -3933,7 +3935,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2230 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_struktur ;
@@ -3944,7 +3946,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2231 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_konstruksi ;
@@ -3955,7 +3957,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2232 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_penginderaan_jauh ;
@@ -3966,7 +3968,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2233 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_sumber_air ;
@@ -3977,7 +3979,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2234 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_rekayasa ;
@@ -3988,7 +3990,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2235 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_asset ;
@@ -3999,7 +4001,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2236 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -4010,7 +4012,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2237 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_pemukiman_kota_dan_lingkungan ;
@@ -4021,7 +4023,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2238 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_dan_kritik_arsitek ;
@@ -4032,7 +4034,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2239 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_kota ;
@@ -4043,7 +4045,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2240 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitek_lingkungan ;
@@ -4054,7 +4056,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2241 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_perencanaan_kota ;
@@ -4065,7 +4067,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2242 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_studi_pembangunan ;
@@ -4076,7 +4078,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2243 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_arsitektur ;
@@ -4087,7 +4089,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2244 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_real_estate ;
@@ -4098,7 +4100,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2245 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -4109,7 +4111,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2246 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_manajemen_lingkungan ;
@@ -4120,7 +4122,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2247 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_rekayasa_pengendalian_lingkungan ;
@@ -4131,7 +4133,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2248 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geomatika;
@@ -4142,7 +4144,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2249 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geotermal;
@@ -4153,7 +4155,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2250 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -4164,7 +4166,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2251 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perancangan_bang_laut ;
@@ -4175,7 +4177,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2252 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_trans_kelautan ;
@@ -4186,7 +4188,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2253 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_produk_dan_material_laut ;
@@ -4197,7 +4199,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2254 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -4208,7 +4210,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2255 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_sistem_pengend_laut ;
@@ -4219,7 +4221,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2256 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_manajemen_pantai ;
@@ -4230,7 +4232,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2257 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_t_informatika;
@@ -4241,7 +4243,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2258 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
@@ -4252,7 +4254,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2259 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2010/2011;
+	ITS:tahunAjaran    ITS:tahunAjaran_2011_2012 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_MMT;
@@ -4264,7 +4266,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:2301 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -4275,7 +4277,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2302 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_matematika;
@@ -4286,7 +4288,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2303 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -4297,7 +4299,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2304 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -4308,7 +4310,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2305 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_hayati ;
@@ -4319,7 +4321,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2306 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_non_hayati ;
@@ -4330,7 +4332,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2307 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_pengajaran ;
@@ -4341,7 +4343,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2308 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -4352,7 +4354,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2309 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rek_perancangan_dan_manufaktur ;
@@ -4363,7 +4365,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2310 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_energi ;
@@ -4374,7 +4376,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2311 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kesehatan_dan_keselamatan_kerja ;
@@ -4385,7 +4387,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2312 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_rekayasa_energi ;
@@ -4396,7 +4398,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2313 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_desain_mekanikal ;
@@ -4407,7 +4409,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2314 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_tenaga ;
@@ -4418,7 +4420,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2315 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_pengaturan ;
@@ -4429,7 +4431,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2316 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telekomunikasi ;
@@ -4440,7 +4442,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2317 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_distribusi_tenagalist ;
@@ -4451,7 +4453,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2318 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -4462,7 +4464,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2319 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_informatika_komp;
@@ -4473,7 +4475,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2320 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telematika ;
@@ -4484,7 +4486,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2321 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -4495,7 +4497,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2322 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_fisika;
@@ -4506,7 +4508,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2323 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -4517,7 +4519,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2324 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_manajemen_industri ;
@@ -4528,7 +4530,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2325 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rantai_pasok ;
@@ -4539,7 +4541,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2326 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_ergonomi_dan_keselamatan_industri ;
@@ -4550,7 +4552,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2327 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_kinerja_strategis ;
@@ -4561,7 +4563,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2328 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -4572,7 +4574,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2329 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_material;
@@ -4583,7 +4585,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2330 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_struktur ;
@@ -4594,7 +4596,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2331 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_konstruksi ;
@@ -4605,7 +4607,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2332 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_penginderaan_jauh ;
@@ -4616,7 +4618,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2333 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_sumber_air ;
@@ -4627,7 +4629,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2334 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_rekayasa ;
@@ -4638,7 +4640,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2335 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_asset ;
@@ -4649,7 +4651,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2336 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -4660,7 +4662,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2337 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_pemukiman_kota_dan_lingkungan ;
@@ -4671,7 +4673,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2338 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_dan_kritik_arsitek ;
@@ -4682,7 +4684,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2339 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_kota ;
@@ -4693,7 +4695,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2340 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitek_lingkungan ;
@@ -4704,7 +4706,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2341 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_perencanaan_kota ;
@@ -4715,7 +4717,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2342 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_studi_pembangunan ;
@@ -4726,7 +4728,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2343 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_arsitektur ;
@@ -4737,7 +4739,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2344 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_real_estate ;
@@ -4748,7 +4750,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2345 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -4759,7 +4761,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2346 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_manajemen_lingkungan ;
@@ -4770,7 +4772,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2347 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_rekayasa_pengendalian_lingkungan ;
@@ -4781,7 +4783,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2348 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geomatika;
@@ -4792,7 +4794,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2349 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geotermal;
@@ -4803,7 +4805,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2350 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -4814,7 +4816,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2351 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perancangan_bang_laut ;
@@ -4825,7 +4827,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2352 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_trans_kelautan ;
@@ -4836,7 +4838,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2353 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_produk_dan_material_laut ;
@@ -4847,7 +4849,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2354 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -4858,7 +4860,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2355 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_sistem_pengend_laut ;
@@ -4869,7 +4871,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2356 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_manajemen_pantai ;
@@ -4880,7 +4882,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2357 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_t_informatika;
@@ -4891,7 +4893,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2358 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
@@ -4902,7 +4904,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2359 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2012/2013;
+	ITS:tahunAjaran    ITS:tahunAjaran_2012_2013 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_MMT;
@@ -4914,7 +4916,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:2401 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -4925,7 +4927,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2402 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_matematika;
@@ -4936,7 +4938,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2403 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -4947,7 +4949,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2404 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -4958,7 +4960,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2405 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_hayati ;
@@ -4969,7 +4971,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2406 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_non_hayati ;
@@ -4980,7 +4982,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2407 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_pengajaran ;
@@ -4991,7 +4993,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2408 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -5002,7 +5004,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2409 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rek_perancangan_dan_manufaktur ;
@@ -5013,7 +5015,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2410 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_energi ;
@@ -5024,7 +5026,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2411 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kesehatan_dan_keselamatan_kerja ;
@@ -5035,7 +5037,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2412 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_rekayasa_energi ;
@@ -5046,7 +5048,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2413 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_desain_mekanikal ;
@@ -5057,7 +5059,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2414 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_tenaga ;
@@ -5068,7 +5070,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2415 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_pengaturan ;
@@ -5079,7 +5081,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2416 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telekomunikasi ;
@@ -5090,7 +5092,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2417 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_distribusi_tenagalist ;
@@ -5101,7 +5103,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2418 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -5112,7 +5114,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2419 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_informatika_komp;
@@ -5123,7 +5125,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2420 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telematika ;
@@ -5134,7 +5136,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2421 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -5145,7 +5147,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2422 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_fisika;
@@ -5156,7 +5158,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2423 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -5167,7 +5169,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2424 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_manajemen_industri ;
@@ -5178,7 +5180,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2425 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rantai_pasok ;
@@ -5189,7 +5191,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2426 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_ergonomi_dan_keselamatan_industri ;
@@ -5200,7 +5202,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2427 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_kinerja_strategis ;
@@ -5211,7 +5213,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2428 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -5222,7 +5224,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2429 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_material;
@@ -5233,7 +5235,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2430 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_struktur ;
@@ -5244,7 +5246,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2431 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_konstruksi ;
@@ -5255,7 +5257,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2432 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_penginderaan_jauh ;
@@ -5266,7 +5268,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2433 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_sumber_air ;
@@ -5277,7 +5279,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2434 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_rekayasa ;
@@ -5288,7 +5290,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2435 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_asset ;
@@ -5299,7 +5301,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2436 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -5310,7 +5312,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2437 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_pemukiman_kota_dan_lingkungan ;
@@ -5321,7 +5323,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2438 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_dan_kritik_arsitek ;
@@ -5332,7 +5334,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2439 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_kota ;
@@ -5343,7 +5345,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2440 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitek_lingkungan ;
@@ -5354,7 +5356,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2441 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_perencanaan_kota ;
@@ -5365,7 +5367,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2442 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_studi_pembangunan ;
@@ -5376,7 +5378,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2443 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_arsitektur ;
@@ -5387,7 +5389,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2444 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_real_estate ;
@@ -5398,7 +5400,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2445 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -5409,7 +5411,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2446 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_manajemen_lingkungan ;
@@ -5420,7 +5422,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2447 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_rekayasa_pengendalian_lingkungan ;
@@ -5431,7 +5433,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2448 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geomatika;
@@ -5442,7 +5444,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2449 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geotermal;
@@ -5453,7 +5455,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2450 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -5464,7 +5466,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2451 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perancangan_bang_laut ;
@@ -5475,7 +5477,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2452 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_trans_kelautan ;
@@ -5486,7 +5488,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2453 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_produk_dan_material_laut ;
@@ -5497,7 +5499,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2454 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -5508,7 +5510,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2455 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_sistem_pengend_laut ;
@@ -5519,7 +5521,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2456 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_manajemen_pantai ;
@@ -5530,7 +5532,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2457 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_t_informatika;
@@ -5541,7 +5543,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2458 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
@@ -5552,7 +5554,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2459 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2013/2014;
+	ITS:tahunAjaran    ITS:tahunAjaran_2013_2014 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_MMT;
@@ -5564,7 +5566,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:2501 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -5575,7 +5577,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2502 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_matematika;
@@ -5586,7 +5588,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2503 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -5597,7 +5599,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2504 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -5608,7 +5610,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2505 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_hayati ;
@@ -5619,7 +5621,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2506 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_non_hayati ;
@@ -5630,7 +5632,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2507 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia_pengajaran ;
@@ -5641,7 +5643,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2508 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -5652,7 +5654,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2509 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rek_perancangan_dan_manufaktur ;
@@ -5663,7 +5665,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2510 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_energi ;
@@ -5674,7 +5676,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2511 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kesehatan_dan_keselamatan_kerja ;
@@ -5685,7 +5687,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2512 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_rekayasa_energi ;
@@ -5696,7 +5698,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2513 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_desain_mekanikal ;
@@ -5707,7 +5709,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2514 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_tenaga ;
@@ -5718,7 +5720,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2515 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_sistem_pengaturan ;
@@ -5729,7 +5731,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2516 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telekomunikasi ;
@@ -5740,7 +5742,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2517 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_distribusi_tenagalist ;
@@ -5751,7 +5753,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2518 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -5762,7 +5764,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2519 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_informatika_komp;
@@ -5773,7 +5775,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2520 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_telematika ;
@@ -5784,7 +5786,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2521 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -5795,7 +5797,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2522 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_fisika;
@@ -5806,7 +5808,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2523 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -5817,7 +5819,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2524 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_manajemen_industri ;
@@ -5828,7 +5830,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2525 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_rantai_pasok ;
@@ -5839,7 +5841,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2526 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_ergonomi_dan_keselamatan_industri ;
@@ -5850,7 +5852,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2527 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_manajemen_kinerja_strategis ;
@@ -5861,7 +5863,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2528 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -5872,7 +5874,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2529 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_material;
@@ -5883,7 +5885,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2530 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_struktur ;
@@ -5894,7 +5896,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2531 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_konstruksi ;
@@ -5905,7 +5907,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2532 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_penginderaan_jauh ;
@@ -5916,7 +5918,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2533 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_sumber_air ;
@@ -5927,7 +5929,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2534 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_rekayasa ;
@@ -5938,7 +5940,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2535 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_asset ;
@@ -5949,7 +5951,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2536 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -5960,7 +5962,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2537 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_pemukiman_kota_dan_lingkungan ;
@@ -5971,7 +5973,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2538 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_dan_kritik_arsitek ;
@@ -5982,7 +5984,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2539 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_kota ;
@@ -5993,7 +5995,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2540 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitek_lingkungan ;
@@ -6004,7 +6006,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2541 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_manajemen_perencanaan_kota ;
@@ -6015,7 +6017,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2542 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_studi_pembangunan ;
@@ -6026,7 +6028,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2543 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_perancangan_arsitektur ;
@@ -6037,7 +6039,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2544 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_real_estate ;
@@ -6048,7 +6050,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2545 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -6059,7 +6061,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2546 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_manajemen_lingkungan ;
@@ -6070,7 +6072,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2547 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_rekayasa_pengendalian_lingkungan ;
@@ -6081,7 +6083,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2548 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geomatika;
@@ -6092,7 +6094,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2549 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_geotermal;
@@ -6103,7 +6105,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2550 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -6114,7 +6116,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2551 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perancangan_bang_laut ;
@@ -6125,7 +6127,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2552 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_trans_kelautan ;
@@ -6136,7 +6138,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2553 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_produk_dan_material_laut ;
@@ -6147,7 +6149,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2554 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -6158,7 +6160,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2555 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_sistem_pengend_laut ;
@@ -6169,7 +6171,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2556 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_manajemen_pantai ;
@@ -6180,7 +6182,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2557 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_t_informatika;
@@ -6191,7 +6193,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2558 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
@@ -6202,7 +6204,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:2559 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaran2014/2015;
+	ITS:tahunAjaran    ITS:tahunAjaran_2014_2015 ;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S2;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_MMT;
@@ -6213,7 +6215,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 		ITS:3101 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -6224,7 +6226,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3102 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -6235,7 +6237,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3103 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -6246,7 +6248,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3104 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -6257,7 +6259,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3105 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -6268,7 +6270,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3106 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -6279,7 +6281,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3107 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -6290,7 +6292,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3108 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -6301,7 +6303,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3109 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -6312,7 +6314,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3110 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -6323,7 +6325,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3111 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -6334,7 +6336,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3112 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2010_2011;
+	ITS:tahunAjaran ITS:tahunAjaran_2010_2011;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -6346,7 +6348,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:3201 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -6357,7 +6359,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3202 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -6368,7 +6370,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3203 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -6379,7 +6381,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3204 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -6390,7 +6392,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3205 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -6401,7 +6403,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3206 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -6412,7 +6414,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3207 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -6423,7 +6425,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3208 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -6434,7 +6436,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3209 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -6445,7 +6447,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3210 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -6456,7 +6458,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3211 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -6467,7 +6469,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3212 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2011_2012;
+	ITS:tahunAjaran ITS:tahunAjaran_2011_2012;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -6479,7 +6481,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:3301 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -6490,7 +6492,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3302 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -6501,7 +6503,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3303 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -6512,7 +6514,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3304 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -6523,7 +6525,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3305 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -6534,7 +6536,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3306 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -6545,7 +6547,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3307 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -6556,7 +6558,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3308 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -6567,7 +6569,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3309 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -6578,7 +6580,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3310 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -6589,7 +6591,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3311 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -6600,7 +6602,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3312 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2012_2013;
+	ITS:tahunAjaran ITS:tahunAjaran_2012_2013;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -6612,7 +6614,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:3401 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -6623,7 +6625,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3402 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -6634,7 +6636,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3403 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -6645,7 +6647,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3404 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -6656,7 +6658,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3405 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -6667,7 +6669,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3406 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -6678,7 +6680,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3407 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -6689,7 +6691,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3408 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -6700,7 +6702,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3409 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -6711,7 +6713,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3410 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -6722,7 +6724,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3411 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -6733,7 +6735,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3412 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2013_2014;
+	ITS:tahunAjaran ITS:tahunAjaran_2013_2014;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
@@ -6745,7 +6747,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 	ITS:3501 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_fisika;
@@ -6756,7 +6758,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3502 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_statistika;
@@ -6767,7 +6769,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3503 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FMIPA;
 	ITS:jurusan      ITS:jurusan_kimia;
@@ -6778,7 +6780,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3504 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_mesin;
@@ -6789,7 +6791,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3505 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_elektro;
@@ -6800,7 +6802,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3506 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_kimia;
@@ -6811,7 +6813,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3507 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTI;
 	ITS:jurusan      ITS:jurusan_t_industri;
@@ -6822,7 +6824,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3508 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_sipil;
@@ -6833,7 +6835,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3509 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_arsitektur;
@@ -6844,7 +6846,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3510 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTSP;
 	ITS:jurusan      ITS:jurusan_t_lingkungan;
@@ -6855,7 +6857,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3511 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_perkapalan;
@@ -6866,7 +6868,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	
 	ITS:3512 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:tahunAjaranITS:tahunAjaran_2014_2015;
+	ITS:tahunAjaran ITS:tahunAjaran_2014_2015;
 	ITS:jenjangPendidikan   ITS:jenjangPendidikan_S3;
 	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_t_kelautan;
