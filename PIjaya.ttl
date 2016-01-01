@@ -601,35 +601,35 @@ ITS:dataset-ITS02 a qb:DataSet;
 
 
 	ITS:slice1 a qb:Slice;	
-	qb:sliceStructure  ITS:slice_mahasiswa ;
+	qb:sliceStructure  ITS:sliceByJurusan ;
     ITS:tahunAjaran     	ITS:tahunAjaran_2010_2011 ;   
 	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
     qb:observation ITS:01, ITS:02, ITS:03, ITS:04, ITS:05, ITS:06, ITS:07, ITS:08, ITS:09, ITS:10, ITS:11, ITS:12, ITS:13, ITS:14, ITS:15, ITS:16, ITS:17, ITS:18, ITS:19, ITS:20, ITS:21, ITS:22, ITS:23, ITS:24, ITS:25, ITS:26, ITS:27, ITS:28, ITS:29, ITS:30, ITS:31, ITS:32, ITS:33, ITS:34, ITS:35, ITS:36, ITS:37, ITS:38, ITS:39, ITS:40, ITS:41, ITS:42, ITS:43, ITS:44, ITS:45 ;
     .
 	
 	ITS:slice2 a qb:Slice;	
-	qb:sliceStructure  ITS:slice_mahasiswa ;
+	qb:sliceStructure  ITS:sliceByJurusan ;
     ITS:tahunAjaran     	ITS:tahunAjaran_2011_2012 ;   
 	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
     qb:observation ITS:101, ITS:102, ITS:103, ITS:104, ITS:105, ITS:106, ITS:107, ITS:108, ITS:109, ITS:110, ITS:111, ITS:112, ITS:113, ITS:114, ITS:115, ITS:116, ITS:117, ITS:118, ITS:119, ITS:120, ITS:121, ITS:122, ITS:123, ITS:124, ITS:125, ITS:126, ITS:127, ITS:128, ITS:129, ITS:130, ITS:131, ITS:132, ITS:133, ITS:134, ITS:135, ITS:136, ITS:137, ITS:138, ITS:139, ITS:140, ITS:141, ITS:142, ITS:143, ITS:144, ITS:145 ;
     .
 	
 	ITS:slice3 a qb:Slice;	
-	qb:sliceStructure  ITS:slice_mahasiswa ;
+	qb:sliceStructure  ITS:sliceByJurusan ;
     ITS:tahunAjaran     	ITS:tahunAjaran_2012_2013 ;   
 	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
     qb:observation ITS:201, ITS:202, ITS:203, ITS:204, ITS:205, ITS:206, ITS:207, ITS:208, ITS:209, ITS:210, ITS:211, ITS:212, ITS:213, ITS:214, ITS:215, ITS:216, ITS:217, ITS:218, ITS:219, ITS:220, ITS:221, ITS:222, ITS:223, ITS:224, ITS:225, ITS:226, ITS:227, ITS:228, ITS:229, ITS:230, ITS:231, ITS:232, ITS:233, ITS:234, ITS:235, ITS:236, ITS:237, ITS:238, ITS:239, ITS:240, ITS:241, ITS:242, ITS:243, ITS:244, ITS:245 ;
     .
 	
 	ITS:slice4 a qb:Slice;	
-	qb:sliceStructure  ITS:slice_mahasiswa ;
+	qb:sliceStructure  ITS:sliceByJurusan ;
     ITS:tahunAjaran     	ITS:tahunAjaran_2013_2014 ;   
 	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
     qb:observation ITS:301, ITS:302, ITS:303, ITS:304, ITS:305, ITS:306, ITS:307, ITS:308, ITS:309, ITS:310, ITS:311, ITS:312, ITS:313, ITS:314, ITS:315, ITS:316, ITS:317, ITS:318, ITS:319, ITS:320, ITS:321, ITS:322, ITS:323, ITS:324, ITS:325, ITS:326, ITS:327, ITS:328, ITS:329, ITS:330, ITS:331, ITS:332, ITS:333, ITS:334, ITS:335, ITS:336, ITS:337, ITS:338, ITS:339, ITS:340, ITS:341, ITS:342, ITS:343, ITS:344, ITS:345 ;
     .
 	
 	ITS:slice5 a qb:Slice;	
-	qb:sliceStructure  ITS:slice_mahasiswa ;
+	qb:sliceStructure  ITS:sliceByJurusan ;
     ITS:tahunAjaran     	ITS:tahunAjaran_2014_2015 ;   
 	ITS:jenjangPendidikan 	ITS:jenjangPendidikan_S1 ;
     qb:observation ITS:401, ITS:402, ITS:403, ITS:404, ITS:405, ITS:406, ITS:407, ITS:408, ITS:409, ITS:410, ITS:411, ITS:412, ITS:413, ITS:414, ITS:415, ITS:416, ITS:417, ITS:418, ITS:419, ITS:420, ITS:421, ITS:422, ITS:423, ITS:424, ITS:425, ITS:426, ITS:427, ITS:428, ITS:429, ITS:430, ITS:431, ITS:432, ITS:433, ITS:434, ITS:435, ITS:436, ITS:437, ITS:438, ITS:439, ITS:440, ITS:441, ITS:442, ITS:443, ITS:444, ITS:445 ;
