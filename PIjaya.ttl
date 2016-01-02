@@ -53,10 +53,15 @@ ITS:fakultas_FTIf
 	a skos:Concept, ITS:fakultas ;
 	rdfs:label "Fakultas FTIf" ;
 	skos:inScheme ITS:fakultas .
+	
+ITS:fakultas_UMUM
+	a skos:Concept, ITS:fakultas ;
+	rdfs:label "Fakultas UMUM" ;
+	skos:inScheme ITS:fakultas .
 
 ITS:fakultas a skos:ConceptScheme ;
 	rdfs:label "Fakultas yang ada di ITS" ;
-	skos:hasTopConcept ITS:fakultas_FTI, ITS:fakultas_FTSP, ITS:fakultas_FTK, ITS:fakultas_FMIPA, ITS:fakultas_FTIf ;
+	skos:hasTopConcept ITS:fakultas_FTI, ITS:fakultas_FTSP, ITS:fakultas_FTK, ITS:fakultas_FMIPA, ITS:fakultas_FTIf, ITS:fakultas_UMUM ;
 	skos:notation "fakultas" .
 	
 ITS:fakultas
@@ -508,13 +513,22 @@ ITS:jurusan a rdfs:Class .
 	rdfs:label "teknik manajemen pantai" ;
 	skos:inScheme ITS:jurusan .
 	
+	ITS:UPM_soshum
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label "UPM soshum" ;
+	skos:inScheme ITS:jurusan .
+	
+	ITS:jurusan_program_pascasarjana
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label "jurusan program pascasarjana" ;
+	skos:inScheme ITS:jurusan .
 
 
 	 
 
 ITS:jurusan a skos:ConceptScheme ;
 	rdfs:label "Jurusan yang ada di ITS" ;
-	skos:hasTopConcept ITS:jurusan_fisika , ITS:jurusan_matematika , ITS:jurusan_statistika , ITS:jurusan_kimia , ITS:jurusan_t_mesin , ITS:jurusan_t_elektro , ITS:jurusan_t_fisika , ITS:jurusan_t_kimia , ITS:jurusan_t_industri , ITS:jurusan_t_sipil , ITS:jurusan_arsitektur , ITS:jurusan_t_lingkungan , ITS:jurusan_t_geomatika , ITS:jurusan_t_perkapalan , ITS:jurusan_t_kelautan , ITS:jurusan_t_informatika , ITS:jurusan_sistem_informasi , ITS:jurusan_MMT , ITS:jurusan_biologi , ITS:jurusan_D3_statistika , ITS:jurusan_t_kimia , ITS:jurusan_D3_t_mesin , ITS:jurusan_D3_t_mesin_PLN , ITS:jurusan_D3_t_mesin_KS_Disnaker , ITS:jurusan_D3_t_komputer_kontrol , ITS:jurusan_D3_t_elektro_PLN , ITS:jurusan_D3_t_elektro_KS_disnaker , ITS:jurusan_D3_t_kimia , ITS:jurusan_D3_t_instrumentasi , ITS:jurusan_D3_t_metrologi_instrumentasi , ITS:jurusan_t_multimedia_jaringan , ITS:jurusan_manajemen_bisnis , ITS:jurusan_t_material , ITS:jurusan_manajemen_jaringan , ITS:jurusan_desain_produk , ITS:jurusan_t_geodesi , ITS:jurusan_perencanaan_wilayah_kota , ITS:jurusan_t_geofisika , ITS:jurusan_desain_interior , ITS:jurusan_t_sistem_perkapalan , ITS:jurusan_t_sistem_perkapalan_DG , ITS:jurusan_transportasi_laut , ITS:jurusan_D4_t_sipil_reg , ITS:jurusan_D4_t_sipil , ITS:jurusan_D3_t_sipil , ITS:jurusan_D3_t_sipil_kerjasama , ITS:jurusan_kimia_hayati , ITS:jurusan_kimia_non_hayati , ITS:jurusan_kimia_pengajaran , ITS:jurusan_t_rek_perancangan_dan_manufaktur , ITS:jurusan_t_energi , ITS:jurusan_t_kesehatan_dan_keselamatan_kerja , ITS:jurusan_rekayasa_energi , ITS:jurusan_desain_mekanikal , ITS:jurusan_t_sistem_tenaga , ITS:jurusan_t_sistem_pengaturan , ITS:jurusan_t_telekomunikasi , ITS:jurusan_manajemen_distribusi_tenagalist , ITS:jurusan_t_informatika_komp , ITS:jurusan_t_telematika , ITS:jurusan_t_kimia_t_proses , ITS:jurusan_t_manajemen_industri , ITS:jurusan_t_rantai_pasok , ITS:jurusan_ergonomi_dan_keselamatan_industri , ITS:jurusan_manajemen_kinerja_strategis , ITS:jurusan_geoteknik , ITS:jurusan_t_struktur , ITS:jurusan_manajemen_konstruksi , ITS:jurusan_penginderaan_jauh , ITS:jurusan_manajemen_sumber_air , ITS:jurusan_manajemen_rekayasa , ITS:jurusan_manajemen_asset , ITS:jurusan_pemukiman_kota_dan_lingkungan , ITS:jurusan_perancangan_dan_kritik_arsitek , ITS:jurusan_perancangan_kota , ITS:jurusan_arsitek_lingkungan , ITS:jurusan_manajemen_perencanaan_kota , ITS:jurusan_studi_pembangunan , ITS:jurusan_perancangan_arsitektur , ITS:jurusan_real_estate , ITS:jurusan_t_manajemen_lingkungan , ITS:jurusan_t_rekayasa_pengendalian_lingkungan , ITS:jurusan_t_geotermal , ITS:jurusan_t_perancangan_bang_laut , ITS:jurusan_t_trans_kelautan , ITS:jurusan_produk_dan_material_laut , ITS:jurusan_sistem_pengend_laut , ITS:jurusan_t_manajemen_pantai   ;
+	skos:hasTopConcept ITS:jurusan_fisika , ITS:jurusan_matematika , ITS:jurusan_statistika , ITS:jurusan_kimia , ITS:jurusan_t_mesin , ITS:jurusan_t_elektro , ITS:jurusan_t_fisika , ITS:jurusan_t_kimia , ITS:jurusan_t_industri , ITS:jurusan_t_sipil , ITS:jurusan_arsitektur , ITS:jurusan_t_lingkungan , ITS:jurusan_t_geomatika , ITS:jurusan_t_perkapalan , ITS:jurusan_t_kelautan , ITS:jurusan_t_informatika , ITS:jurusan_sistem_informasi , ITS:jurusan_MMT , ITS:jurusan_biologi , ITS:jurusan_D3_statistika , ITS:jurusan_t_kimia , ITS:jurusan_D3_t_mesin , ITS:jurusan_D3_t_mesin_PLN , ITS:jurusan_D3_t_mesin_KS_Disnaker , ITS:jurusan_D3_t_komputer_kontrol , ITS:jurusan_D3_t_elektro_PLN , ITS:jurusan_D3_t_elektro_KS_disnaker , ITS:jurusan_D3_t_kimia , ITS:jurusan_D3_t_instrumentasi , ITS:jurusan_D3_t_metrologi_instrumentasi , ITS:jurusan_t_multimedia_jaringan , ITS:jurusan_manajemen_bisnis , ITS:jurusan_t_material , ITS:jurusan_manajemen_jaringan , ITS:jurusan_desain_produk , ITS:jurusan_t_geodesi , ITS:jurusan_perencanaan_wilayah_kota , ITS:jurusan_t_geofisika , ITS:jurusan_desain_interior , ITS:jurusan_t_sistem_perkapalan , ITS:jurusan_t_sistem_perkapalan_DG , ITS:jurusan_transportasi_laut , ITS:jurusan_D4_t_sipil_reg , ITS:jurusan_D4_t_sipil , ITS:jurusan_D3_t_sipil , ITS:jurusan_D3_t_sipil_kerjasama , ITS:jurusan_kimia_hayati , ITS:jurusan_kimia_non_hayati , ITS:jurusan_kimia_pengajaran , ITS:jurusan_t_rek_perancangan_dan_manufaktur , ITS:jurusan_t_energi , ITS:jurusan_t_kesehatan_dan_keselamatan_kerja , ITS:jurusan_rekayasa_energi , ITS:jurusan_desain_mekanikal , ITS:jurusan_t_sistem_tenaga , ITS:jurusan_t_sistem_pengaturan , ITS:jurusan_t_telekomunikasi , ITS:jurusan_manajemen_distribusi_tenagalist , ITS:jurusan_t_informatika_komp , ITS:jurusan_t_telematika , ITS:jurusan_t_kimia_t_proses , ITS:jurusan_t_manajemen_industri , ITS:jurusan_t_rantai_pasok , ITS:jurusan_ergonomi_dan_keselamatan_industri , ITS:jurusan_manajemen_kinerja_strategis , ITS:jurusan_geoteknik , ITS:jurusan_t_struktur , ITS:jurusan_manajemen_konstruksi , ITS:jurusan_penginderaan_jauh , ITS:jurusan_manajemen_sumber_air , ITS:jurusan_manajemen_rekayasa , ITS:jurusan_manajemen_asset , ITS:jurusan_pemukiman_kota_dan_lingkungan , ITS:jurusan_perancangan_dan_kritik_arsitek , ITS:jurusan_perancangan_kota , ITS:jurusan_arsitek_lingkungan , ITS:jurusan_manajemen_perencanaan_kota , ITS:jurusan_studi_pembangunan , ITS:jurusan_perancangan_arsitektur , ITS:jurusan_real_estate , ITS:jurusan_t_manajemen_lingkungan , ITS:jurusan_t_rekayasa_pengendalian_lingkungan , ITS:jurusan_t_geotermal , ITS:jurusan_t_perancangan_bang_laut , ITS:jurusan_t_trans_kelautan , ITS:jurusan_produk_dan_material_laut , ITS:jurusan_sistem_pengend_laut , ITS:jurusan_t_manajemen_pantai ,ITS:UPM_soshum, ITS:jurusan_program_pascasarjana   ;
 	skos:notation "jurusan" .
 	
 ITS:jurusan
@@ -6423,68 +6437,212 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	
 
+	ITS:dosen_001 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_UMUM;
+	ITS:jurusan      ITS:UPM_soshum;
+	ITS:jumlahDosen      34.
+
+	ITS:dosen_002 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_fisika;
+	ITS:jumlahDosen      35.
+
+	ITS:dosen_003 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_matematika;
+	ITS:jumlahDosen      47.
+
+	ITS:dosen_004 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_statistika;
+	ITS:jumlahDosen      41.
+
+	ITS:dosen_005 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_kimia;
+	ITS:jumlahDosen      34.
+
+	ITS:dosen_006 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FMIPA;
+	ITS:jurusan      ITS:jurusan_biologi;
+	ITS:jumlahDosen      21.
+
+	ITS:dosen_007 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_mesin;
+	ITS:jumlahDosen      52.
+
+	ITS:dosen_008 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_mesin;
+	ITS:jumlahDosen      19.
+
+	ITS:dosen_009 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_elektro;
+	ITS:jumlahDosen      68.
+
+	ITS:dosen_010 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_elektro;
+	ITS:jumlahDosen      4.
+
+	ITS:dosen_011 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_kimia;
+	ITS:jumlahDosen      37.
+
+	ITS:dosen_012 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_D3_t_kimia;
+	ITS:jumlahDosen      14.
+
+	ITS:dosen_013 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_fisika;
+	ITS:jumlahDosen      39.
+
+	ITS:dosen_014 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_industri;
+	ITS:jumlahDosen      34.
+
+	ITS:dosen_015 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_material;
+	ITS:jumlahDosen      19.
+
+	ITS:dosen_016 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_t_multimedia_jaringan;
+	ITS:jumlahDosen      18.
+
+	ITS:dosen_017 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTI;
+	ITS:jurusan      ITS:jurusan_manajemen_bisnis;
+	ITS:jumlahDosen      8.
+
+	ITS:dosen_018 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_sipil;
+	ITS:jumlahDosen      55.
+
+	ITS:dosen_019 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D3_t_sipil;
+	ITS:jumlahDosen      34.
+
+	ITS:dosen_020 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_D4_t_sipil;
+	ITS:jumlahDosen      12.
+
+	ITS:dosen_021 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_arsitektur;
+	ITS:jumlahDosen      43.
+
+	ITS:dosen_022 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_lingkungan;
+	ITS:jumlahDosen      30.
+
+	ITS:dosen_023 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_produk;
+	ITS:jumlahDosen      23.
+
+	ITS:dosen_024 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geomatika;
+	ITS:jumlahDosen      16.
+
+	ITS:dosen_025 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_perencanaan_wilayah_kota;
+	ITS:jumlahDosen      21.
+
+	ITS:dosen_026 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_t_geofisika;
+	ITS:jumlahDosen      7.
+
+	ITS:dosen_027 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:jurusan      ITS:jurusan_desain_interior;
+	ITS:jumlahDosen      12.
+
+	ITS:dosen_028 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_perkapalan;
+	ITS:jumlahDosen      22.
+
+	ITS:dosen_029 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_sistem_perkapalan;
+	ITS:jumlahDosen      29.
+
+	ITS:dosen_030 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_t_kelautan;
+	ITS:jumlahDosen      28.
+
+	ITS:dosen_031 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTK;
+	ITS:jurusan      ITS:jurusan_transportasi_laut;
+	ITS:jumlahDosen      7.
+
+	ITS:dosen_032 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_t_informatika;
+	ITS:jumlahDosen      44.
+
+	ITS:dosen_033 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:jurusan      ITS:jurusan_sistem_informasi;
+	ITS:jumlahDosen      30.
+
+	ITS:dosen_034 a qb:Observation;
+	qb:dataSet      ITS:dataset-ITS02;
+	ITS:fakultas      ITS:fakultas_UMUM;
+	ITS:jurusan      ITS:jurusan_program_pascasarjana;
+	ITS:jumlahDosen      2.
+
 
 
 	
 	
-	
-ITS:dosen_001 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_fisika ;         
-	ITS:jumlahDosen	    35 .
-
-ITS:dosen_002 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_matematika ;         
-	ITS:jumlahDosen	    47 .
-
-ITS:dosen_003 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_statistika ;         
-	ITS:jumlahDosen	    41 .
-
-ITS:dosen_004 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_kimia ;         
-	ITS:jumlahDosen	    34 .	
-	
-ITS:dosen_005 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FMIPA ;
-	ITS:jurusan				ITS:jurusan_biologi ;         
-	ITS:jumlahDosen	    21 .
-
-ITS:dosen_006 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_mesin ;         
-	ITS:jumlahDosen	    52 .
-
-ITS:dosen_007 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_D3_t_mesin ;         
-	ITS:jumlahDosen	    19 .	
-
-ITS:dosen_008 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_elektro ;         
-	ITS:jumlahDosen	    68 .
-
-ITS:dosen_009 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_D3_t_elektro_PLN ;         
-	ITS:jumlahDosen	    4 .
-	
-ITS:dosen_010 a qb:Observation;
-    qb:dataSet  ITS:dataset-ITS02 ;
-    ITS:fakultas      		ITS:fakultas_FTI ;
-	ITS:jurusan				ITS:jurusan_t_kimia ;         
-	ITS:jumlahDosen	    37 .
 
