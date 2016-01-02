@@ -68,330 +68,452 @@ ITS:fakultas
 
 ITS:jurusan a rdfs:Class .
 
-ITS:jurusan_fisika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_matematika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_statistika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_kimia 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_biologi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_mesin 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_elektro 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_fisika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_kimia 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_industri 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_mesin 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_mesin_PLN 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_mesin_KS_Disnaker 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_komputer_kontrol 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_elektro_PLN 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_elektro_KS_disnaker 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_kimia 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_instrumentasi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_D3_t_metrologi_instrumentasi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_multimedia_jaringan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_bisnis 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_material 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manjemen_jaringan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_sipil 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_arsitektur 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_lingkungan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_desain_produk 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_geomatika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_perencanaan_wilayah_kota 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_geofisika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_desain_interior 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_perkapalan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_sistem_perkapalan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_sistem_perkapalan_dg
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_kelautan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_transportasi_laut 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_informatika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_sistem_informasi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_kimia_hayati 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_kimia_non_hayati 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_kimia_pengajaran 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_rek_perancangan_dan_manufaktur 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_energi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_kesehatan_dan_keselamatan_kerja 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_rekayasa_energi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_desain_mekanikal 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_sistem_tenaga 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_sistem_pengaturan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_telekomunikasi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_distribusi_tenagalist 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_telematika 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_kimia_t_proses 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_manajemen_industri 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_rantai_pasok 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_ergonomi_dan_keselamatan_industri 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_kinerja_strategis 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_geoteknik 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_struktur 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_konstruksi 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_penginderaan_jauh 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_sumber_air 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_rekayasa 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_asset 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_pemukiman_kota_dan_lingkungan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_perancangan_dan_kritik_arsitek 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_perancangan_kota 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_arsitek_lingkungan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_manajemen_perencanaan_kota 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_studi_pembangunan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_perancangan_arsitektur 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_real_estate 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_manajemen_lingkungan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_rekayasa_pengendalian_lingkungan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_geotermal 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_perancangan_bang_laut 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_trans_kelautan 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_produk_dan_material_laut 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_sistem_pengend_laut 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_t_manajemen_pantai 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
-	 
-ITS:jurusan_MMT 
-	a skos:Concept , ITS:jurusan  ; 
-	skos:inScheme ITS:jurusan . 
+	ITS:jurusan_fisika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label fisika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_matematika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label matematika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_statistika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label statistika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_kimia
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label kimia;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_mesin
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik mesin;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_elektro
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik elektro;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_fisika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik fisika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_kimia
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik kimia;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_industri
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik industri;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_sipil
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik sipil;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_arsitektur
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label arsitektur;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_lingkungan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik lingkungan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_geomatika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik geomatika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_perkapalan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik perkapalan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_kelautan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik kelautan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_informatika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik informatika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_sistem_informasi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label sistem informasi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_MMT
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label MMT;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_biologi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label biologi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_statistika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 statistika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_kimia
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik kimia;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_mesin
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik mesin;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_mesin_PLN
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik mesin PLN;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_mesin_KS_Disnaker
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik mesin KS Disnaker;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_komputer_kontrol
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik komputer kontrol;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_elektro_PLN
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik elektro PLN;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_elektro_KS_disnaker
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik elektro KS disnaker;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_kimia
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik kimia;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_instrumentasi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik instrumentasi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_metrologi_instrumentasi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik metrologi instrumentasi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_multimedia_jaringan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik multimedia jaringan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_bisnis
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen bisnis;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_material
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik material;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_jaringan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen jaringan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_desain_produk
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label desain produk;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_geodesi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik geodesi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_perencanaan_wilayah_kota
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label perencanaan wilayah kota;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_geofisika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik geofisika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_desain_interior
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label desain interior;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_sistem_perkapalan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik sistem perkapalan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_sistem_perkapalan_DG
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik sistem perkapalan DG;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_transportasi_laut
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label transportasi laut;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D4_t_sipil_reg
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D4 teknik sipil reg;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D4_t_sipil
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D4 teknik sipil;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_sipil
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik sipil;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_D3_t_sipil_kerjasama
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label D3 teknik sipil kerjasama;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_kimia_hayati
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label kimia hayati;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_kimia_non_hayati
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label kimia non hayati;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_kimia_pengajaran
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label kimia pengajaran;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_rek_perancangan_dan_manufaktur
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik rek perancangan dan manufaktur;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_energi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik energi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_kesehatan_dan_keselamatan_kerja
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik kesehatan dan keselamatan kerja;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_rekayasa_energi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label rekayasa energi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_desain_mekanikal
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label desain mekanikal;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_sistem_tenaga
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik sistem tenaga;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_sistem_pengaturan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik sistem pengaturan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_telekomunikasi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik telekomunikasi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_distribusi_tenagalist
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen distribusi tenagalist;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_informatika_komp
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik informatika komp;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_telematika
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik telematika;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_kimia_t_proses
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik kimia teknik proses;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_manajemen_industri
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik manajemen industri;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_rantai_pasok
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik rantai pasok;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_ergonomi_dan_keselamatan_industri
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label ergonomi dan keselamatan industri;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_kinerja_strategis
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen kinerja strategis;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_geoteknik
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label geoteknik;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_struktur
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik struktur;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_konstruksi
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen konstruksi;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_penginderaan_jauh
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label penginderaan jauh;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_sumber_air
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen sumber air;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_rekayasa
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen rekayasa;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_asset
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen asset;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_pemukiman_kota_dan_lingkungan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label pemukiman kota dan lingkungan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_perancangan_dan_kritik_arsitek
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label perancangan dan kritik arsitek;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_perancangan_kota
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label perancangan kota;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_arsitek_lingkungan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label arsitek lingkungan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_manajemen_perencanaan_kota
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label manajemen perencanaan kota;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_studi_pembangunan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label studi pembangunan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_perancangan_arsitektur
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label perancangan arsitektur;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_real_estate
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label real estate;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_manajemen_lingkungan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik manajemen lingkungan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_rekayasa_pengendalian_lingkungan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik rekayasa pengendalian lingkungan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_geotermal
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik geotermal;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_perancangan_bang_laut
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik perancangan bang laut;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_trans_kelautan
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik trans kelautan;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_produk_dan_material_laut
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label produk dan material laut;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_sistem_pengend_laut
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label sistem pengend laut;
+	skos:inScheme ITS:jurusan .
+
+	ITS:jurusan_t_manajemen_pantai
+	a skos:Concept , ITS:jurusan ;
+	rdfs:label teknik manajemen pantai;
+	skos:inScheme ITS:jurusan .
+
+
 	 
 
 ITS:jurusan a skos:ConceptScheme ;
 	rdfs:label "Jurusan yang ada di ITS" ;
-	skos:hasTopConcept ITS:jurusan_fisika, ITS:jurusan_matematika, ITS:jurusan_statistika, ITS:jurusan_kimia, ITS:jurusan_biologi, ITS:jurusan_t_mesin, ITS:jurusan_t_elektro, ITS:jurusan_t_fisika, ITS:jurusan_t_kimia, ITS:jurusan_t_industri, ITS:jurusan_D3_t_mesin, ITS:jurusan_D3_t_mesin_PLN, ITS:jurusan_D3_t_mesin_KS_Disnaker, ITS:jurusan_D3_t_komputer_kontrol, ITS:jurusan_D3_t_elektro_PLN, ITS:jurusan_D3_t_elektro_KS_disnaker, ITS:jurusan_D3_t_kimia, ITS:jurusan_D3_t_instrumentasi, ITS:jurusan_D3_t_metrologi_instrumentasi, ITS:jurusan_t_multimedia_jaringan, ITS:jurusan_manajemen_bisnis, ITS:jurusan_t_material, ITS:jurusan_manjemen_jaringan, ITS:jurusan_t_sipil, ITS:jurusan_arsitektur, ITS:jurusan_t_lingkungan, ITS:jurusan_desain_produk, ITS:jurusan_t_geomatika, ITS:jurusan_perencanaan_wilayah_kota, ITS:jurusan_t_geofisika, ITS:jurusan_desain_interior, ITS:jurusan_t_perkapalan, ITS:jurusan_t_sistem_perkapalan, ITS:jurusan_t_sistem_perkapalan_dg, ITS:jurusan_t_kelautan, ITS:jurusan_transportasi_laut, ITS:jurusan_t_informatika, ITS:jurusan_t_sistem_informasi, ITS:jurusan_kimia_hayati, ITS:jurusan_kimia_non_hayati, ITS:jurusan_kimia_pengajaran, ITS:jurusan_t_rek_perancangan_dan_manufaktur, ITS:jurusan_t_energi, ITS:jurusan_t_kesehatan_dan_keselamatan_kerja, ITS:jurusan_rekayasa_energi, ITS:jurusan_desain_mekanikal, ITS:jurusan_t_sistem_tenaga, ITS:jurusan_t_sistem_pengaturan, ITS:jurusan_t_telekomunikasi, ITS:jurusan_manajemen_distribusi_tenagalist, ITS:jurusan_t_telematika, ITS:jurusan_t_kimia_t_proses, ITS:jurusan_t_manajemen_industri, ITS:jurusan_t_rantai_pasok, ITS:jurusan_ergonomi_dan_keselamatan_industri, ITS:jurusan_manajemen_kinerja_strategis, ITS:jurusan_geoteknik, ITS:jurusan_t_struktur, ITS:jurusan_manajemen_konstruksi, ITS:jurusan_penginderaan_jauh, ITS:jurusan_manajemen_sumber_air, ITS:jurusan_manajemen_rekayasa, ITS:jurusan_manajemen_asset, ITS:jurusan_pemukiman_kota_dan_lingkungan, ITS:jurusan_perancangan_dan_kritik_arsitek, ITS:jurusan_perancangan_kota, ITS:jurusan_arsitek_lingkungan, ITS:jurusan_manajemen_perencanaan_kota, ITS:jurusan_studi_pembangunan, ITS:jurusan_perancangan_arsitektur, ITS:jurusan_real_estate, ITS:jurusan_t_manajemen_lingkungan, ITS:jurusan_t_rekayasa_pengendalian_lingkungan, ITS:jurusan_t_geotermal, ITS:jurusan_t_perancangan_bang_laut, ITS:jurusan_t_trans_kelautan, ITS:jurusan_produk_dan_material_laut, ITS:jurusan_sistem_pengend_laut, ITS:jurusan_t_manajemen_pantai, ITS:jurusan_MMT ;
+	skos:hasTopConcept ITS:jurusan_fisika , ITS:jurusan_matematika , ITS:jurusan_statistika , ITS:jurusan_kimia , ITS:jurusan_t_mesin , ITS:jurusan_t_elektro , ITS:jurusan_t_fisika , ITS:jurusan_t_kimia , ITS:jurusan_t_industri , ITS:jurusan_t_sipil , ITS:jurusan_arsitektur , ITS:jurusan_t_lingkungan , ITS:jurusan_t_geomatika , ITS:jurusan_t_perkapalan , ITS:jurusan_t_kelautan , ITS:jurusan_t_informatika , ITS:jurusan_sistem_informasi , ITS:jurusan_MMT , ITS:jurusan_biologi , ITS:jurusan_D3_statistika , ITS:jurusan_t_kimia , ITS:jurusan_D3_t_mesin , ITS:jurusan_D3_t_mesin_PLN , ITS:jurusan_D3_t_mesin_KS_Disnaker , ITS:jurusan_D3_t_komputer_kontrol , ITS:jurusan_D3_t_elektro_PLN , ITS:jurusan_D3_t_elektro_KS_disnaker , ITS:jurusan_D3_t_kimia , ITS:jurusan_D3_t_instrumentasi , ITS:jurusan_D3_t_metrologi_instrumentasi , ITS:jurusan_t_multimedia_jaringan , ITS:jurusan_manajemen_bisnis , ITS:jurusan_t_material , ITS:jurusan_manajemen_jaringan , ITS:jurusan_desain_produk , ITS:jurusan_t_geodesi , ITS:jurusan_perencanaan_wilayah_kota , ITS:jurusan_t_geofisika , ITS:jurusan_desain_interior , ITS:jurusan_t_sistem_perkapalan , ITS:jurusan_t_sistem_perkapalan_DG , ITS:jurusan_transportasi_laut , ITS:jurusan_D4_t_sipil_reg , ITS:jurusan_D4_t_sipil , ITS:jurusan_D3_t_sipil , ITS:jurusan_D3_t_sipil_kerjasama , ITS:jurusan_kimia_hayati , ITS:jurusan_kimia_non_hayati , ITS:jurusan_kimia_pengajaran , ITS:jurusan_t_rek_perancangan_dan_manufaktur , ITS:jurusan_t_energi , ITS:jurusan_t_kesehatan_dan_keselamatan_kerja , ITS:jurusan_rekayasa_energi , ITS:jurusan_desain_mekanikal , ITS:jurusan_t_sistem_tenaga , ITS:jurusan_t_sistem_pengaturan , ITS:jurusan_t_telekomunikasi , ITS:jurusan_manajemen_distribusi_tenagalist , ITS:jurusan_t_informatika_komp , ITS:jurusan_t_telematika , ITS:jurusan_t_kimia_t_proses , ITS:jurusan_t_manajemen_industri , ITS:jurusan_t_rantai_pasok , ITS:jurusan_ergonomi_dan_keselamatan_industri , ITS:jurusan_manajemen_kinerja_strategis , ITS:jurusan_geoteknik , ITS:jurusan_t_struktur , ITS:jurusan_manajemen_konstruksi , ITS:jurusan_penginderaan_jauh , ITS:jurusan_manajemen_sumber_air , ITS:jurusan_manajemen_rekayasa , ITS:jurusan_manajemen_asset , ITS:jurusan_pemukiman_kota_dan_lingkungan , ITS:jurusan_perancangan_dan_kritik_arsitek , ITS:jurusan_perancangan_kota , ITS:jurusan_arsitek_lingkungan , ITS:jurusan_manajemen_perencanaan_kota , ITS:jurusan_studi_pembangunan , ITS:jurusan_perancangan_arsitektur , ITS:jurusan_real_estate , ITS:jurusan_t_manajemen_lingkungan , ITS:jurusan_t_rekayasa_pengendalian_lingkungan , ITS:jurusan_t_geotermal , ITS:jurusan_t_perancangan_bang_laut , ITS:jurusan_t_trans_kelautan , ITS:jurusan_produk_dan_material_laut , ITS:jurusan_sistem_pengend_laut , ITS:jurusan_t_manajemen_pantai   ;
 	skos:notation "jurusan" .
 	
 ITS:jurusan
