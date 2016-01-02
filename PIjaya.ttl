@@ -68,445 +68,446 @@ ITS:fakultas
 
 ITS:jurusan a rdfs:Class .
 
-	ITS:jurusan_fisika
+		ITS:jurusan_fisika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label fisika;
+	rdfs:label "fisika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_matematika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label matematika;
+	rdfs:label "matematika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_statistika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label statistika;
+	rdfs:label "statistika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_kimia
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label kimia;
+	rdfs:label "kimia" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_mesin
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik mesin;
+	rdfs:label "teknik mesin" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_elektro
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik elektro;
+	rdfs:label "teknik elektro" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_fisika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik fisika;
+	rdfs:label "teknik fisika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_kimia
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik kimia;
+	rdfs:label "teknik kimia" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_industri
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik industri;
+	rdfs:label "teknik industri" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_sipil
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik sipil;
+	rdfs:label "teknik sipil" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_arsitektur
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label arsitektur;
+	rdfs:label "arsitektur" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_lingkungan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik lingkungan;
+	rdfs:label "teknik lingkungan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_geomatika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik geomatika;
+	rdfs:label "teknik geomatika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_perkapalan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik perkapalan;
+	rdfs:label "teknik perkapalan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_kelautan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik kelautan;
+	rdfs:label "teknik kelautan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_informatika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik informatika;
+	rdfs:label "teknik informatika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_sistem_informasi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label sistem informasi;
+	rdfs:label "sistem informasi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_MMT
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label MMT;
+	rdfs:label "MMT" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_biologi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label biologi;
+	rdfs:label "biologi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_statistika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 statistika;
+	rdfs:label "D3 statistika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_kimia
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik kimia;
+	rdfs:label "teknik kimia" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_mesin
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik mesin;
+	rdfs:label "D3 teknik mesin" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_mesin_PLN
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik mesin PLN;
+	rdfs:label "D3 teknik mesin PLN" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_mesin_KS_Disnaker
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik mesin KS Disnaker;
+	rdfs:label "D3 teknik mesin KS Disnaker" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_komputer_kontrol
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik komputer kontrol;
+	rdfs:label "D3 teknik komputer kontrol" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_elektro_PLN
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik elektro PLN;
+	rdfs:label "D3 teknik elektro PLN" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_elektro_KS_disnaker
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik elektro KS disnaker;
+	rdfs:label "D3 teknik elektro KS disnaker" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_kimia
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik kimia;
+	rdfs:label "D3 teknik kimia" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_instrumentasi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik instrumentasi;
+	rdfs:label "D3 teknik instrumentasi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_metrologi_instrumentasi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik metrologi instrumentasi;
+	rdfs:label "D3 teknik metrologi instrumentasi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_multimedia_jaringan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik multimedia jaringan;
+	rdfs:label "teknik multimedia jaringan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_bisnis
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen bisnis;
+	rdfs:label "manajemen bisnis" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_material
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik material;
+	rdfs:label "teknik material" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_jaringan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen jaringan;
+	rdfs:label "manajemen jaringan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_desain_produk
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label desain produk;
+	rdfs:label "desain produk" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_geodesi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik geodesi;
+	rdfs:label "teknik geodesi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_perencanaan_wilayah_kota
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label perencanaan wilayah kota;
+	rdfs:label "perencanaan wilayah kota" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_geofisika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik geofisika;
+	rdfs:label "teknik geofisika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_desain_interior
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label desain interior;
+	rdfs:label "desain interior" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_sistem_perkapalan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik sistem perkapalan;
+	rdfs:label "teknik sistem perkapalan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_sistem_perkapalan_DG
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik sistem perkapalan DG;
+	rdfs:label "teknik sistem perkapalan DG" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_transportasi_laut
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label transportasi laut;
+	rdfs:label "transportasi laut" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D4_t_sipil_reg
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D4 teknik sipil reg;
+	rdfs:label "D4 teknik sipil reg" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D4_t_sipil
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D4 teknik sipil;
+	rdfs:label "D4 teknik sipil" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_sipil
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik sipil;
+	rdfs:label "D3 teknik sipil" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_D3_t_sipil_kerjasama
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label D3 teknik sipil kerjasama;
+	rdfs:label "D3 teknik sipil kerjasama" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_kimia_hayati
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label kimia hayati;
+	rdfs:label "kimia hayati" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_kimia_non_hayati
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label kimia non hayati;
+	rdfs:label "kimia non hayati" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_kimia_pengajaran
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label kimia pengajaran;
+	rdfs:label "kimia pengajaran" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_rek_perancangan_dan_manufaktur
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik rek perancangan dan manufaktur;
+	rdfs:label "teknik rek perancangan dan manufaktur" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_energi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik energi;
+	rdfs:label "teknik energi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_kesehatan_dan_keselamatan_kerja
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik kesehatan dan keselamatan kerja;
+	rdfs:label "teknik kesehatan dan keselamatan kerja" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_rekayasa_energi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label rekayasa energi;
+	rdfs:label "rekayasa energi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_desain_mekanikal
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label desain mekanikal;
+	rdfs:label "desain mekanikal" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_sistem_tenaga
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik sistem tenaga;
+	rdfs:label "teknik sistem tenaga" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_sistem_pengaturan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik sistem pengaturan;
+	rdfs:label "teknik sistem pengaturan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_telekomunikasi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik telekomunikasi;
+	rdfs:label "teknik telekomunikasi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_distribusi_tenagalist
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen distribusi tenagalist;
+	rdfs:label "manajemen distribusi tenagalist" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_informatika_komp
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik informatika komp;
+	rdfs:label "teknik informatika komp" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_telematika
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik telematika;
+	rdfs:label "teknik telematika" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_kimia_t_proses
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik kimia teknik proses;
+	rdfs:label "teknik kimia teknik proses" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_manajemen_industri
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik manajemen industri;
+	rdfs:label "teknik manajemen industri" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_rantai_pasok
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik rantai pasok;
+	rdfs:label "teknik rantai pasok" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_ergonomi_dan_keselamatan_industri
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label ergonomi dan keselamatan industri;
+	rdfs:label "ergonomi dan keselamatan industri" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_kinerja_strategis
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen kinerja strategis;
+	rdfs:label "manajemen kinerja strategis" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_geoteknik
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label geoteknik;
+	rdfs:label "geoteknik" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_struktur
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik struktur;
+	rdfs:label "teknik struktur" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_konstruksi
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen konstruksi;
+	rdfs:label "manajemen konstruksi" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_penginderaan_jauh
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label penginderaan jauh;
+	rdfs:label "penginderaan jauh" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_sumber_air
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen sumber air;
+	rdfs:label "manajemen sumber air" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_rekayasa
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen rekayasa;
+	rdfs:label "manajemen rekayasa" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_asset
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen asset;
+	rdfs:label "manajemen asset" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_pemukiman_kota_dan_lingkungan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label pemukiman kota dan lingkungan;
+	rdfs:label "pemukiman kota dan lingkungan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_perancangan_dan_kritik_arsitek
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label perancangan dan kritik arsitek;
+	rdfs:label "perancangan dan kritik arsitek" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_perancangan_kota
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label perancangan kota;
+	rdfs:label "perancangan kota" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_arsitek_lingkungan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label arsitek lingkungan;
+	rdfs:label "arsitek lingkungan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_manajemen_perencanaan_kota
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label manajemen perencanaan kota;
+	rdfs:label "manajemen perencanaan kota" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_studi_pembangunan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label studi pembangunan;
+	rdfs:label "studi pembangunan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_perancangan_arsitektur
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label perancangan arsitektur;
+	rdfs:label "perancangan arsitektur" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_real_estate
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label real estate;
+	rdfs:label "real estate" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_manajemen_lingkungan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik manajemen lingkungan;
+	rdfs:label "teknik manajemen lingkungan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_rekayasa_pengendalian_lingkungan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik rekayasa pengendalian lingkungan;
+	rdfs:label "teknik rekayasa pengendalian lingkungan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_geotermal
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik geotermal;
+	rdfs:label "teknik geotermal" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_perancangan_bang_laut
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik perancangan bang laut;
+	rdfs:label "teknik perancangan bang laut" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_trans_kelautan
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik trans kelautan;
+	rdfs:label "teknik trans kelautan" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_produk_dan_material_laut
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label produk dan material laut;
+	rdfs:label "produk dan material laut" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_sistem_pengend_laut
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label sistem pengend laut;
+	rdfs:label "sistem pengend laut" ;
 	skos:inScheme ITS:jurusan .
-
+	
 	ITS:jurusan_t_manajemen_pantai
 	a skos:Concept , ITS:jurusan ;
-	rdfs:label teknik manajemen pantai;
+	rdfs:label "teknik manajemen pantai" ;
 	skos:inScheme ITS:jurusan .
+	
 
 
 	 
