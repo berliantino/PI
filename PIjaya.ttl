@@ -1166,7 +1166,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:38 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_transportasi_laut;
 
  ITS:jumlahMahasiswa      0;
@@ -1184,7 +1184,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:40 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
 
  ITS:jumlahMahasiswa      641;
@@ -1572,7 +1572,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:138 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_transportasi_laut;
 
     ITS:jumlahMahasiswa      37;
@@ -1590,7 +1590,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:140 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
 
     ITS:jumlahMahasiswa      729;
@@ -1978,7 +1978,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:238 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_transportasi_laut;
 
     ITS:jumlahMahasiswa      85;
@@ -1996,7 +1996,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:240 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
 
     ITS:jumlahMahasiswa      744;
@@ -2384,7 +2384,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:338 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_transportasi_laut;
 
     ITS:jumlahMahasiswa      135;
@@ -2402,7 +2402,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:340 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
 
     ITS:jumlahMahasiswa      834;
@@ -2792,7 +2792,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:438 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTIf;
+	ITS:fakultas      ITS:fakultas_FTK;
 	ITS:jurusan      ITS:jurusan_transportasi_laut;
 
     ITS:jumlahMahasiswa      177;
@@ -2810,7 +2810,7 @@ ITS:dataset-ITS02 a qb:DataSet;
 	.
 	ITS:440 a qb:Observation;
 	qb:dataSet ITS:dataset-ITS01;
-	ITS:fakultas      ITS:fakultas_FTSP;
+	ITS:fakultas      ITS:fakultas_FTIf;
 	ITS:jurusan      ITS:jurusan_sistem_informasi;
 
     ITS:jumlahMahasiswa      860;
